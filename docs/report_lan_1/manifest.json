@@ -1,0 +1,105 @@
+{
+  "diagram_count": 24,
+  "table_count": 45,
+  "diagrams": [
+    {
+      "code": "UC00",
+      "title": "Use case tổng quan"
+    },
+    {
+      "code": "UC01",
+      "title": "Use case khách hàng"
+    },
+    {
+      "code": "UC02",
+      "title": "Use case chủ sân"
+    },
+    {
+      "code": "UC03",
+      "title": "Use case nhân viên"
+    },
+    {
+      "code": "UC04",
+      "title": "Use case admin"
+    },
+    {
+      "code": "SQ01",
+      "title": "Đặt sân và xác nhận thanh toán"
+    },
+    {
+      "code": "SQ02",
+      "title": "Hết hạn checkout"
+    },
+    {
+      "code": "SQ03",
+      "title": "Yêu cầu hủy và ghi nhận hoàn"
+    },
+    {
+      "code": "SQ04",
+      "title": "Gửi sửa và duyệt hồ sơ cơ sở"
+    },
+    {
+      "code": "SQ05",
+      "title": "Phân quyền và thao tác nhân viên"
+    },
+    {
+      "code": "SQ06",
+      "title": "Đăng ký và thanh toán giải đấu"
+    },
+    {
+      "code": "ER01",
+      "title": "ERD danh tính và nhân viên"
+    },
+    {
+      "code": "ER02",
+      "title": "ERD cơ sở và bảng giá"
+    },
+    {
+      "code": "ER03",
+      "title": "ERD đặt sân và tài chính"
+    },
+    {
+      "code": "ER04",
+      "title": "ERD hoạt động và cộng đồng"
+    },
+    {
+      "code": "ER05",
+      "title": "ERD các chức năng bổ trợ"
+    },
+    {
+      "code": "ER06",
+      "title": "ERD tin nhắn và chi trả"
+    },
+    {
+      "code": "CL01",
+      "title": "Class diagram lõi state và lưu trữ"
+    },
+    {
+      "code": "CL02",
+      "title": "Class diagram miền nghiệp vụ"
+    },
+    {
+      "code": "DP01",
+      "title": "Deployment hiện tại"
+    },
+    {
+      "code": "DP02",
+      "title": "Deployment backend dự kiến"
+    },
+    {
+      "code": "UX01",
+      "title": "Sitemap và luồng UI UX"
+    },
+    {
+      "code": "ST01",
+      "title": "Trạng thái thanh toán và hủy"
+    },
+    {
+      "code": "ST02",
+      "title": "Trạng thái hồ sơ cơ sở"
+    }
+  ],
+  "source": "D:/PTUDDD/test_do_an",
+  "date": "2026-10-10",
+  "backend_implemented": false
+}

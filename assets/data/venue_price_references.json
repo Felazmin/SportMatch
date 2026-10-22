@@ -1,0 +1,134 @@
+{
+  "osm-node-12418249325": {
+    "min": 40000,
+    "max": 80000,
+    "currency": "VND",
+    "unit": "court_hour",
+    "sport": "Cầu lông",
+    "status": "third_party_publication",
+    "sourceName": "ShopVNB",
+    "sourceUrl": "https://shopvnb.com/san-cau-long-the-b-huong-lo-2.html",
+    "checkedAt": "2026-10-19",
+    "note": "Giá thuê một sân theo giờ, tùy khung giờ. Nguồn không nêu ngày hết hiệu lực và khuyến nghị liên hệ sân vì bảng giá thay đổi theo tháng. Không bao gồm combo và ưu đãi. Đối chiếu theo tên sân và địa chỉ 859 Hương Lộ 2."
+  },
+  "osm-node-13579698304": {
+    "min": 45000, "max": 130000, "currency": "VND", "unit": "court_hour",
+    "sport": "Cầu lông", "status": "third_party_publication",
+    "sourceName": "ShopVNB",
+    "sourceUrl": "https://shopvnb.com/clb-cau-long-rach-cat.html",
+    "checkedAt": "2026-10-19",
+    "note": "Giá một sân theo giờ thấp điểm đến cao điểm. Cơ sở được bài viết xác định tại 186A Mễ Cốc, Quận 8; không phải sân Rạch Cát ở Cần Đước. Chưa có lịch giá chi tiết hoặc ngày hết hiệu lực."
+  },
+  "osm-way-1369408164": {
+    "min": 80000, "max": 80000, "currency": "VND", "unit": "court_hour",
+    "kind": "indicative", "sport": "Cầu lông", "status": "third_party_publication",
+    "sourceName": "ShopVNB", "publishedAt": "2025-11-01",
+    "sourceUrl": "https://shopvnb.com/san-cau-long-tay-thanh.html",
+    "checkedAt": "2026-10-19",
+    "note": "Nguồn ghi mức khoảng 80.000 đồng mỗi giờ tại 87 Chế Lan Viên, khu Dương Đức Hiền – Chế Lan Viên. Không khẳng định áp dụng mọi khung giờ; không dùng cho các sân tennis hoặc bóng rổ lân cận. Cần liên hệ để xác nhận giá hiện hành."
+  },
+  "osm-way-1347893002": {
+    "min": 45000, "max": 50000, "currency": "VND", "unit": "court_hour",
+    "sport": "Cầu lông", "status": "third_party_publication",
+    "sourceName": "ShopVNB",
+    "sourceUrl": "https://shopvnb.com/san-cau-long-huong-giang.html",
+    "checkedAt": "2026-10-19",
+    "note": "Giá tham khảo theo giờ cho cơ sở Hẻm 258 Phan Đăng Lưu, Long Hương, khu vực Bà Rịa. Bài có tiêu đề phụ ghi nhầm Bình Dương; chỉ đối chiếu theo địa chỉ cụ thể. Cần chủ sân xác nhận trước khi sử dụng."
+  },
+  "osm-way-786415062": {
+    "min": 40000, "max": 60000, "currency": "VND", "unit": "court_hour",
+    "sport": "Cầu lông", "status": "third_party_publication",
+    "sourceName": "Shop Cầu Lông", "publishedAt": "2026-10-01",
+    "sourceUrl": "https://shopcaulong.org/san-cau-long-vung-tau.html",
+    "checkedAt": "2026-10-19",
+    "note": "Khoảng giá bài tổng hợp cho Trung Thành, đường 3 Tháng 2, Vũng Tàu. Đối chiếu cơ sở 379 đường 3 Tháng 2; không phải sân Trung Thành ở địa phương khác. Nguồn chưa công bố lịch giá theo ngày, giờ."
+  },
+  "osm-way-1350606729": {
+    "min": 50000, "max": 180000, "currency": "VND", "unit": "court_hour",
+    "sport": "Pickleball", "status": "third_party_publication",
+    "sourceName": "ShopVNB", "publishedAt": "2025-10-23",
+    "sourceUrl": "https://shopvnb.com/san-pickleball-426.html",
+    "checkedAt": "2026-10-19",
+    "note": "Giá thuê sân theo khung giờ tại 16/15 Bình Lợi. Nền tảng khác ghi từ 80.000 đồng/giờ; đây là khoảng của riêng bài ShopVNB, không ghép các nguồn thành một bảng giá. Cần liên hệ sân xác nhận giá hiện hành."
+  },
+  "osm-node-12497844578": {
+    "min": 120000, "max": 200000, "currency": "VND", "unit": "court_hour",
+    "sport": "Pickleball", "status": "third_party_publication",
+    "sourceName": "ShopVNB", "publishedAt": "2025-12-06",
+    "sourceUrl": "https://shopvnb.com/san-pickleball-thanh-thai.html",
+    "checkedAt": "2026-10-19",
+    "note": "Giá một sân mỗi giờ, tùy giờ chơi, cơ sở 3/9 Thành Thái, Quận 10. Bài không chia cụ thể theo ngày hoặc loại sân; cần xác nhận giá trước khi đến."
+  },
+  "osm-node-12497854425": {
+    "min": 150000, "max": 200000, "currency": "VND", "unit": "court_hour",
+    "sport": "Pickleball", "status": "third_party_publication",
+    "sourceName": "ShopVNB",
+    "sourceUrl": "https://shopvnb.com/san-pickleball-lan-anh.html",
+    "checkedAt": "2026-10-19",
+    "note": "Giá thuê pickleball tại CLB Lan Anh, 291 Cách Mạng Tháng 8, tùy giờ chơi. Không áp dụng cho hai điểm tennis cùng tên Lan Anh có tọa độ khác trong dữ liệu OSM. Cần xác nhận giá hiện hành."
+  },
+  "osm-node-12497875023": {
+    "min": 78000, "max": 250000, "currency": "VND", "unit": "court_hour",
+    "sport": "Pickleball", "status": "third_party_publication",
+    "sourceName": "ShopVNB",
+    "sourceUrl": "https://shopvnb.com/san-pickleball-ong-dia.html",
+    "checkedAt": "2026-10-19",
+    "note": "Giá thuê sân theo giờ tại 93/1 Nguyễn Hoàng, An Phú, tùy khung giờ. Chưa có bảng chia giờ và ngày hiệu lực; liên hệ chủ sân xác nhận."
+  },
+  "osm-way-1350606489": {
+    "min": 110000, "max": 190000, "currency": "VND", "unit": "court_hour",
+    "sport": "Pickleball", "status": "third_party_publication",
+    "sourceName": "PickleballPlus",
+    "sourceUrl": "https://pickleballplus.vn/san-tap/243",
+    "checkedAt": "2026-10-19",
+    "note": "Chỉ lấy cột giá vãng lai cho Liber, 235/50/31 Đặng Thùy Trâm: 110.000–190.000 đồng/giờ theo ngày và khung giờ. Không dùng khoảng giá cố định 90.000–170.000 đồng cho khách vãng lai. Lịch chi tiết và giờ mở cửa trong trang chưa thống nhất, cần xác nhận lại."
+  },
+  "osm-node-12497865800": {
+    "min": 180000, "max": 250000, "currency": "VND", "unit": "court_hour",
+    "sport": "Pickleball", "status": "third_party_publication",
+    "sourceName": "Thế Giới Pickleball",
+    "sourceUrl": "https://thegioipickleball.vn/san-pickleball-o-quan-3",
+    "checkedAt": "2026-10-19",
+    "note": "Khoảng giá thuê sân theo giờ tại số 2 Hồ Xuân Hương, Quận 3, tùy giờ chơi. Không phải cơ sở cùng tên ở Ngô Thời Nhiệm hoặc Đà Lạt. Nguồn không xác định thời hạn bảng giá; cần liên hệ xác nhận."
+  },
+  "osm-way-242304823": {
+    "min": 600000, "max": 600000, "currency": "VND", "unit": "court_hour",
+    "kind": "indicative", "sport": "Bóng đá", "status": "third_party_publication",
+    "sourceName": "Decathlon", "publishedAt": "2026-06-24",
+    "sourceUrl": "https://www.decathlon.vn/blog/san-bong-da-phui-sai-gon/",
+    "checkedAt": "2026-10-19",
+    "note": "Mức tham khảo nguồn đăng cho sân 5 người Chảo Lửa, 30 Phan Thúc Duyện. Không nêu khung giờ và phụ thu. Chưa xác nhận cho sân 7 người hoặc khu sân khác cùng tên."
+  },
+  "osm-way-1162776052": {
+    "min": 220000, "max": 220000, "currency": "VND", "unit": "court_hour",
+    "kind": "indicative", "sport": "Bóng đá", "status": "third_party_publication",
+    "sourceName": "Decathlon", "publishedAt": "2026-06-24",
+    "sourceUrl": "https://www.decathlon.vn/blog/san-bong-da-phui-sai-gon/",
+    "checkedAt": "2026-10-19",
+    "note": "Nguồn ghi giá trung bình tại Sport Plus WeSport, 31/2 Kênh 19/5. Đây không phải mức tối thiểu hay giá chắc chắn cho mọi giờ; phải hỏi giá theo loại sân và giờ chơi."
+  },
+  "osm-way-1036206953": {
+    "min": 350000, "max": 350000, "currency": "VND", "unit": "court_hour",
+    "kind": "indicative", "sport": "Bóng đá", "status": "third_party_publication",
+    "sourceName": "Decathlon", "publishedAt": "2026-06-24",
+    "sourceUrl": "https://www.decathlon.vn/blog/san-bong-da-phui-sai-gon/",
+    "checkedAt": "2026-10-19",
+    "note": "Giá trung bình bài đăng cho HCA, 324 Chu Văn An, Bình Thạnh. Không áp dụng cơ sở HCA ở Tô Ký, Quận 12; cần hỏi giá riêng theo loại sân và khung giờ."
+  },
+  "osm-way-1246308670": {
+    "min": 270000, "max": 700000, "currency": "VND", "unit": "court_hour",
+    "sport": "Bóng đá", "status": "third_party_publication",
+    "sourceName": "Decathlon", "publishedAt": "2026-06-24",
+    "sourceUrl": "https://www.decathlon.vn/blog/san-bong-da-phui-sai-gon/",
+    "checkedAt": "2026-10-19",
+    "note": "Chỉ áp dụng tham khảo khu sân bóng đá Phú Thọ, 219 Lý Thường Kiệt; giá thay đổi theo loại sân và giờ. Không phải giá bóng rổ, cầu lông hoặc thuê toàn bộ nhà thi đấu."
+  },
+  "osm-way-1271043480": {
+    "min": 100000, "max": 300000, "currency": "VND", "unit": "court_hour",
+    "sport": "Quần vợt", "status": "third_party_publication",
+    "sourceName": "Eduoka",
+    "sourceUrl": "https://eduoka.com/location/san-tennis-khu-nam-long-quan-9",
+    "checkedAt": "2026-10-19",
+    "note": "Giá tham khảo theo giờ của sân tennis khu Nam Long, Phước Long B, Quận 9; không gồm học phí, huấn luyện viên hoặc nhặt bóng. Nguồn không xác định ngày hiệu lực; liên hệ sân để xác nhận."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-10-19",
+  "generator": "Built-in image_gen",
+  "purpose": "Ảnh AI minh họa theo môn thể thao; không phải ảnh thực tế của bất kỳ sân cụ thể nào.",
+  "policy": "Chỉ dùng khi thiếu ảnh hoặc ảnh không tải được; không ghi đè trường image của dữ liệu OSM; ưu tiên ảnh chủ sân.",
+  "assets": [
+    {
+      "file": "assets/illustrations/venues/badminton.png",
+      "prompt": "Use case: stylized-concept. Generate one landscape 3:2 bitmap asset for a sports venue booking app. A polished architectural illustration of an empty indoor badminton court in a generic Vietnamese sports hall, teal green playing surface with correct badminton white boundary lines and central low badminton net, airy metal roof, bright soft daylight, view from elevated diagonal corner showing the whole court. Clearly an attractive stylized 3D illustration, not a photograph or identifiable real venue. No people, lettering, logos, watermark, frames or UI. Balanced composition readable as a small thumbnail, sharp professional rendering."
+    },
+    {
+      "file": "assets/illustrations/venues/pickleball.png",
+      "prompt": "Use case: stylized-concept. One landscape 3:2 bitmap illustration for a sports venue booking app. Polished architectural 3D illustration of an empty outdoor pickleball court at a generic tropical urban recreation facility. Blue playing rectangle with contrasting light green surrounds, accurate white pickleball court boundaries including clearly visible non-volley kitchen zones on both sides of a low central net. Chain-link fence and a few tropical trees beyond. Elevated diagonal corner viewpoint showing full court, sunny soft daylight. Attractive obviously rendered illustration, not a photo or specific identifiable venue. No people, text, logos, watermark, borders or UI. Sharp thumbnail-readable composition."
+    },
+    {
+      "file": "assets/illustrations/venues/football.png",
+      "prompt": "Use case: stylized-concept. One landscape 3:2 bitmap sports venue illustration. Polished architectural 3D render of an empty outdoor small-sided association football pitch at a generic tropical Vietnamese urban sports facility. Rich green artificial grass, accurate white soccer boundaries and halfway line and center circle, one small netted goal at each opposite short end, perimeter safety net fence. Elevated diagonal wide viewpoint fits entire rectangular pitch, soft daylight with some trees beyond, clear sharp thumbnail-readable composition. Obviously rendered illustration not documentary photograph or identifiable real venue. No people, text, brands, watermarks, frame or UI."
+    },
+    {
+      "file": "assets/illustrations/venues/basketball.png",
+      "prompt": "Use case: stylized-concept. One landscape 3:2 bitmap illustration for sports venue app. Polished architectural 3D rendering of an empty outdoor basketball court at a generic tropical urban recreation center. Warm terracotta painted playing area and pale turquoise surrounding border, correct basketball white boundaries, center circle, free throw lanes and three point arcs, exactly two basketball hoops with backboards at opposite short ends. Elevated diagonal wide corner view showing full court. Soft sunny daylight, perimeter fence, leafy trees. Clearly illustrated 3D environment not identifiable real facility. No people, text, logos, watermark or UI."
+    },
+    {
+      "file": "assets/illustrations/venues/tennis.png",
+      "prompt": "Use case: stylized-concept. One landscape 3:2 bitmap illustration for a sports venue app. Polished architectural 3D illustration of an empty outdoor tennis court at a generic tropical recreation facility. Blue playing surface, terracotta run-off surrounds, correct white singles and doubles tennis lines, central tennis net, chain link fence, leafy trees beyond. Elevated diagonal corner view shows full rectangular court in bright soft daylight, appealing sharp composition legible at thumbnail size. Obviously a rendered illustration, not documentary photograph or specific identifiable facility. No people, text, logos, watermark, borders or UI."
+    },
+    {
+      "file": "assets/illustrations/venues/futsal.png",
+      "prompt": "Use case: stylized-concept. One landscape 3:2 bitmap illustration for sports venue app. Polished architectural 3D illustration of an empty indoor futsal hall, smooth blue hard court floor with correct white futsal perimeter, halfway line, center circle and penalty areas, small striped goal with net at each opposite short end. Pale walls, airy metal roof structure, bright soft daylight through high windows, no grass. Elevated diagonal corner viewpoint reveals full pitch. Sharp attractive obviously rendered architectural illustration, no identifiable real facility. No people, text, brands, watermark, border or UI."
+    },
+    {
+      "file": "assets/illustrations/venues/table-tennis.png",
+      "prompt": "Use case: stylized-concept. One landscape 3:2 bitmap illustration for sports venue app. Polished architectural 3D illustration of an empty indoor table tennis practice room in a generic Vietnamese sports center. One clearly visible blue table tennis table with correct white markings and a small central net, two paddles and a white ball resting on near side of table. Pale mint walls, light gray sports flooring, sunlit windows, ample space around table. Elevated diagonal three-quarter view with complete table visible, sharp composition suitable for small thumbnail. Clearly rendered illustration not documentary photograph. No people, text, logos, watermark, frames or UI."
+    },
+    {
+      "file": "assets/illustrations/venues/multisport.png",
+      "prompt": "Use case: stylized-concept. One landscape 3:2 bitmap illustration for sports venue app. Polished architectural 3D illustration of a generic multi-sport recreation center in a tropical city. Elevated wide diagonal view with three separate complete playing spaces: a green small soccer pitch with small goals, an adjacent terracotta basketball court with hoops, and an adjacent blue tennis court with net. Clear spatial separation and proper proportions; trees and modest sports hall in background. Bright soft daylight, sharp attractive readable composition. This is a generic illustrative sports complex, not any identifiable real venue or documentary photograph. No people, lettering, logos, watermark, frame or UI."
+    }
+  ]
+}

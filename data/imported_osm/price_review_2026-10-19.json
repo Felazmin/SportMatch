@@ -1,0 +1,3504 @@
+{
+  "checkedAt": "2026-10-19",
+  "catalogCount": 129,
+  "withReference": 16,
+  "withoutReference": 113,
+  "scope": "Toàn bộ điểm OSM đã nhập vào ứng dụng, không phải toàn bộ sân tồn tại trên thực tế. Không sửa giá sân demo hoặc giá chủ sân đã cấu hình.",
+  "method": "Rà từng bản ghi và đối chiếu nguồn công khai khi đủ danh tính. identity_screening không đồng nghĩa đã tìm kiếm web riêng cho tên chung chung. Không bảo đảm đã tìm hết mọi nguồn trên Internet. Ngày đối chiếu không phải ngày hiệu lực của bảng giá.",
+  "missingPriceLabel": "Liên hệ sân để biết giá",
+  "bySport": {
+    "Bóng đá": {
+      "total": 66,
+      "withReference": 4,
+      "needsContact": 62
+    },
+    "Bóng đá trong nhà": {
+      "total": 4,
+      "withReference": 0,
+      "needsContact": 4
+    },
+    "Bóng rổ": {
+      "total": 17,
+      "withReference": 0,
+      "needsContact": 17
+    },
+    "Cầu lông": {
+      "total": 19,
+      "withReference": 5,
+      "needsContact": 14
+    },
+    "Pickleball": {
+      "total": 13,
+      "withReference": 6,
+      "needsContact": 7
+    },
+    "Quần vợt": {
+      "total": 21,
+      "withReference": 1,
+      "needsContact": 20
+    }
+  },
+  "venues": [
+    {
+      "id": "osm-way-112337549",
+      "name": "Sân Tennis",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.7982847,
+      "longitude": 106.7407192,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/112337549",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-165567733",
+      "name": "Sân vận động Hoa Lư",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7879111,
+      "longitude": 106.7016179,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/165567733",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-169081583",
+      "name": "Cầu lông Tên Lửa",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.7396996,
+      "longitude": 106.6133756,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/169081583",
+      "reviewMethod": "public_source_review",
+      "reviewState": "unclear_unit",
+      "reason": "Bài về Tên Lửa ghi 59.000–120.000 đồng theo khung giờ nhưng đoạn giá chưa xác định rõ đơn vị một sân mỗi giờ; không tự suy diễn từ số tiền.",
+      "sourceUrls": [
+        "https://shopvnb.com/san-cau-long-ten-lua.html"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Cầu lông"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-186276884",
+      "name": "Sân vận động Tao Đàn",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7752098,
+      "longitude": 106.6947592,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/186276884",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-186584463",
+      "name": "CLB Quần Vợt Viettel",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.8078004,
+      "longitude": 106.6491171,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/186584463",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-197983678",
+      "name": "Sân bóng Hoàng Hoa Thám",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.805219,
+      "longitude": 106.6485883,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/197983678",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-242304823",
+      "name": "Sân Bóng Đá Chảo Lửa",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8059337,
+      "longitude": 106.6584014,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/242304823",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Mức tham khảo nguồn đăng cho sân 5 người Chảo Lửa, 30 Phan Thúc Duyện. Không nêu khung giờ và phụ thu. Chưa xác nhận cho sân 7 người hoặc khu sân khác cùng tên.",
+      "sourceUrls": [
+        "https://www.decathlon.vn/blog/san-bong-da-phui-sai-gon/"
+      ],
+      "pricedSports": [
+        "Bóng đá"
+      ],
+      "missingPriceSports": [],
+      "min": 600000,
+      "max": 600000,
+      "unit": "court_hour",
+      "kind": "indicative",
+      "publishedAt": "2026-06-24",
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-253422781",
+      "name": "Sân vận động Bà Rịa",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.5083652,
+      "longitude": 107.1742172,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/253422781",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-259348844",
+      "name": "Sân bóng đá mini OSC",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.362146,
+      "longitude": 107.0761502,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/259348844",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-260405959",
+      "name": "SVĐ xã Tam Phước",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.4670478,
+      "longitude": 107.2285519,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/260405959",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-263171587",
+      "name": "Sân banh Cây Đa",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8630238,
+      "longitude": 106.618905,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/263171587",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-290197604",
+      "name": "Thuần Việt",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": "Đường số 1A",
+      "latitude": 10.7352556,
+      "longitude": 106.6936788,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/290197604",
+      "reviewMethod": "public_source_review",
+      "reviewState": "different_branch",
+      "reason": "Nguồn về Thuần Việt tìm được ở Quận 2, khác tọa độ điểm OSM khu Quận 7; có giá theo trận nhưng không áp dụng ở đây.",
+      "sourceUrls": [
+        "https://www.duongminhfc.com/dich-vu-bong-da/thong-tin-san-bai/156-san-bong-da-thuan-viet-phuong-binh-khanh-quan-2.html"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-290218569",
+      "name": "Sân vận động",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7326155,
+      "longitude": 106.6977518,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/290218569",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-290484110",
+      "name": "Nhà TDTT ĐH Bách Khoa",
+      "sports": [
+        "Bóng rổ",
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8820277,
+      "longitude": 106.8061373,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/290484110",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng rổ",
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-291269259",
+      "name": "SVĐ Dĩ An",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.9112553,
+      "longitude": 106.7668397,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/291269259",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-291853358",
+      "name": "Sân banh Phường Bình Đường",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8676011,
+      "longitude": 106.7488298,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/291853358",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-306183112",
+      "name": "Sân bóng đá Tiến Phát",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8349791,
+      "longitude": 106.7733979,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/306183112",
+      "reviewMethod": "public_source_review",
+      "reviewState": "source_requires_contact",
+      "reason": "Nguồn tổng hợp xác định Tiến Phát, đường số 8, Thủ Đức, nhưng mục giá yêu cầu liên hệ hotline.",
+      "sourceUrls": [
+        "https://www.decathlon.vn/blog/san-bong-da-phui-sai-gon/"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-317486481",
+      "name": "Sân Vận Động",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.856552,
+      "longitude": 106.7589935,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/317486481",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-358132326",
+      "name": "Sân cỏ nhân tạo Thiên Trường",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8093921,
+      "longitude": 106.7172565,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/358132326",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-359260947",
+      "name": "Sân 320",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.81882,
+      "longitude": 106.63904,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/359260947",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-421977480",
+      "name": "Sân Vận Động Thanh Long",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.6903715,
+      "longitude": 106.6574619,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/421977480",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-484855304",
+      "name": "Sân bóng nhân tạo",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8765622,
+      "longitude": 106.8055737,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/484855304",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-488609480",
+      "name": "Sân banh",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8797948,
+      "longitude": 106.8092607,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/488609480",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-585932872",
+      "name": "Lan Anh",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.7709562,
+      "longitude": 106.6712581,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/585932872",
+      "reviewMethod": "public_source_review",
+      "reviewState": "identity_ambiguous",
+      "reason": "Tennis Lan Anh trong OSM có tọa độ khác CLB Lan Anh 291 Cách Mạng Tháng 8. Không gán giá tennis hoặc pickleball của CLB đó.",
+      "sourceUrls": [
+        "https://shopvnb.com/san-tennis-lan-anh.html"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-585932873",
+      "name": "Lan Anh",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.7710333,
+      "longitude": 106.6714143,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/585932873",
+      "reviewMethod": "public_source_review",
+      "reviewState": "identity_ambiguous",
+      "reason": "Tennis Lan Anh trong OSM có tọa độ khác CLB Lan Anh 291 Cách Mạng Tháng 8. Không gán giá tennis hoặc pickleball của CLB đó.",
+      "sourceUrls": [
+        "https://shopvnb.com/san-tennis-lan-anh.html"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-597499978",
+      "name": "Sân banh số 8",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": "29 Đường số 8, Bình Thạnh, Ho Chi Minh City",
+      "latitude": 10.8129675,
+      "longitude": 106.7063269,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/597499978",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-666019526",
+      "name": "Tennis Court Vietsovpetro Resort",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.4695794,
+      "longitude": 107.3724089,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/666019526",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-675570982",
+      "name": "sân bóng đá",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.884076,
+      "longitude": 106.7760982,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/675570982",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-695034808",
+      "name": "Sân Bóng UIT",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8690827,
+      "longitude": 106.8035092,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/695034808",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-716762886",
+      "name": "Sân Bóng Đá Mini Nguyễn Hữu Đan",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7446349,
+      "longitude": 106.6107209,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/716762886",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-721852508",
+      "name": "Nhà thi đấu ĐH KHXH&NV",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.8706767,
+      "longitude": 106.8012696,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/721852508",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Cầu lông"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-724481051",
+      "name": "Sân bóng mini",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8824381,
+      "longitude": 106.8102653,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/724481051",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-724481052",
+      "name": "Sân bóng mini",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8821879,
+      "longitude": 106.8108956,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/724481052",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-751056602",
+      "name": "Sân vận động 30 tháng 4",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 8.6854544,
+      "longitude": 106.6120898,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/751056602",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-786548039",
+      "name": "Sân Long Toàn",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.4924757,
+      "longitude": 107.2000737,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/786548039",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-992658930",
+      "name": "Nhà thi đấu quận 12",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.8738062,
+      "longitude": 106.6384929,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/992658930",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Cầu lông"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-994918130",
+      "name": "Sân tennis",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.7323834,
+      "longitude": 106.6971511,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/994918130",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1036206949",
+      "name": "Sân bóng đá Phan Chu Trinh",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8151134,
+      "longitude": 106.7013745,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1036206949",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1036206953",
+      "name": "Sân bóng đá HCA",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": "Chu Văn An, Bình Thạnh, Phường 12",
+      "latitude": 10.8121888,
+      "longitude": 106.7032281,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1036206953",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Giá trung bình bài đăng cho HCA, 324 Chu Văn An, Bình Thạnh. Không áp dụng cơ sở HCA ở Tô Ký, Quận 12; cần hỏi giá riêng theo loại sân và khung giờ.",
+      "sourceUrls": [
+        "https://www.decathlon.vn/blog/san-bong-da-phui-sai-gon/"
+      ],
+      "pricedSports": [
+        "Bóng đá"
+      ],
+      "missingPriceSports": [],
+      "min": 350000,
+      "max": 350000,
+      "unit": "court_hour",
+      "kind": "indicative",
+      "publishedAt": "2026-06-24",
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1136988288",
+      "name": "Mega Ruby Khang Điền Tennis Court",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.8003395,
+      "longitude": 106.7943707,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1136988288",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1144380341",
+      "name": "sân bóng",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8884705,
+      "longitude": 106.7640464,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1144380341",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1154279486",
+      "name": "Sân bóng rổ",
+      "sports": [
+        "Bóng rổ"
+      ],
+      "address": null,
+      "latitude": 10.732373,
+      "longitude": 106.696968,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1154279486",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng rổ"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1156525356",
+      "name": "Sân bóng rổ",
+      "sports": [
+        "Bóng rổ"
+      ],
+      "address": null,
+      "latitude": 10.723607,
+      "longitude": 106.724392,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1156525356",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng rổ"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1156525358",
+      "name": "Sân tennis",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.7230933,
+      "longitude": 106.7241133,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1156525358",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1162776052",
+      "name": "Sân bóng đá Sport Plus WeSport",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8049534,
+      "longitude": 106.6122377,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1162776052",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Nguồn ghi giá trung bình tại Sport Plus WeSport, 31/2 Kênh 19/5. Đây không phải mức tối thiểu hay giá chắc chắn cho mọi giờ; phải hỏi giá theo loại sân và giờ chơi.",
+      "sourceUrls": [
+        "https://www.decathlon.vn/blog/san-bong-da-phui-sai-gon/"
+      ],
+      "pricedSports": [
+        "Bóng đá"
+      ],
+      "missingPriceSports": [],
+      "min": 220000,
+      "max": 220000,
+      "unit": "court_hour",
+      "kind": "indicative",
+      "publishedAt": "2026-06-24",
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1211762401",
+      "name": "Sân bóng đá Mã Lò",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7844559,
+      "longitude": 106.5971502,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1211762401",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1215108851",
+      "name": "Sân quần vợt TANIMEX",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.8168558,
+      "longitude": 106.6087079,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1215108851",
+      "reviewMethod": "public_source_review",
+      "reviewState": "different_branch",
+      "reason": "Tanimex có nhiều cụm sân; chưa có nguồn giá gắn chắc chắn với đúng điểm OSM này.",
+      "sourceUrls": [
+        "https://www.tanimex.com.vn/"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1215418779",
+      "name": "Sân bóng đá mini Tân Thới Hòa",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": "Hẻm 17 Lương Minh Nguyệt, Tân Phú, Phường Tân Thới Hòa",
+      "latitude": 10.7601872,
+      "longitude": 106.6306613,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1215418779",
+      "reviewMethod": "public_source_review",
+      "reviewState": "source_requires_contact",
+      "reason": "Nguồn Tân Thới Hòa nêu vị trí nhưng không niêm yết giá sử dụng được; cần liên hệ.",
+      "sourceUrls": [
+        "https://www.sporta.vn/san/san-bong-da-mini-tan-thoi-hoa"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1215518830",
+      "name": "Khu thể thao Đảo Kim Cương",
+      "sports": [
+        "Quần vợt",
+        "Bóng rổ"
+      ],
+      "address": "Thủ Đức, Phường Bình Trưng Tây",
+      "latitude": 10.7786368,
+      "longitude": 106.7480962,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1215518830",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt",
+        "Bóng rổ"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1219278791",
+      "name": "Sân bóng Chảo Lửa",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8066361,
+      "longitude": 106.6556877,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1219278791",
+      "reviewMethod": "public_source_review",
+      "reviewState": "different_branch",
+      "reason": "Điểm Chảo Lửa thứ hai chưa phân biệt được khu sân tương ứng với bảng giá; không tự sao chép giá từ điểm Chảo Lửa thứ nhất.",
+      "sourceUrls": [
+        "https://www.decathlon.vn/blog/san-bong-da-phui-sai-gon/"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1222751822",
+      "name": "Sân Tennis S2 - S3",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.8380368,
+      "longitude": 106.8336081,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1222751822",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1222751823",
+      "name": "Sân bóng rổ",
+      "sports": [
+        "Bóng rổ"
+      ],
+      "address": null,
+      "latitude": 10.8379518,
+      "longitude": 106.8334043,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1222751823",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng rổ"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1223149558",
+      "name": "Kinh Bắc Tennis",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.8292066,
+      "longitude": 106.8314974,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1223149558",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1223689088",
+      "name": "Sân bóng đá 13C",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.715664,
+      "longitude": 106.6427684,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1223689088",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1239928935",
+      "name": "Câu lạc bộ Văn hóa Thể thao Tanimex",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": "Đường CN13, Tân Phú, Thành phố Hồ Chí Minh",
+      "latitude": 10.8084826,
+      "longitude": 106.6114908,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1239928935",
+      "reviewMethod": "public_source_review",
+      "reviewState": "unclear_unit",
+      "reason": "Nguồn tổng hợp ghi Tanimex theo người, không đủ căn cứ đổi thành giá một sân mỗi giờ; có nhiều cụm sân Tanimex.",
+      "sourceUrls": [
+        "https://www.decathlon.vn/blog/san-tennis-tphcm",
+        "https://www.tanimex.com.vn/"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1271043480",
+      "name": "Sân Tennis Khu Nam Long Q9",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.8049786,
+      "longitude": 106.7795937,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1271043480",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Giá tham khảo theo giờ của sân tennis khu Nam Long, Phước Long B, Quận 9; không gồm học phí, huấn luyện viên hoặc nhặt bóng. Nguồn không xác định ngày hiệu lực; liên hệ sân để xác nhận.",
+      "sourceUrls": [
+        "https://eduoka.com/location/san-tennis-khu-nam-long-quan-9"
+      ],
+      "pricedSports": [
+        "Quần vợt"
+      ],
+      "missingPriceSports": [],
+      "min": 100000,
+      "max": 300000,
+      "unit": "court_hour",
+      "kind": "range",
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1278534441",
+      "name": "Sân Bóng Chuyền UIT",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.8691463,
+      "longitude": 106.8030796,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1278534441",
+      "reviewMethod": "public_source_review",
+      "reviewState": "sport_conflict",
+      "reason": "Tên OSM ghi sân bóng chuyền UIT nhưng thẻ sport là tennis; cần xác minh môn và danh tính trước khi tìm giá áp dụng.",
+      "sourceUrls": [
+        "https://ctsv.uit.edu.vn/danh-muc/tin-tuc-su-kien?page=2"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1278534442",
+      "name": "Sân Bóng Rổ UIT",
+      "sports": [
+        "Bóng rổ"
+      ],
+      "address": null,
+      "latitude": 10.8691178,
+      "longitude": 106.8028703,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1278534442",
+      "reviewMethod": "public_source_review",
+      "reviewState": "event_fee_not_rental",
+      "reason": "Nguồn UIT có lệ phí tryout bóng rổ 30.000 đồng/người, không phải giá thuê sân; không đưa vào giá thuê theo giờ.",
+      "sourceUrls": [
+        "https://www.uit.edu.vn/sdgs/sdg3"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng rổ"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1292050355",
+      "name": "Sân bóng Cao đẳng Saigon Tech",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8558048,
+      "longitude": 106.6305917,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1292050355",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1308105274",
+      "name": "Sân bóng đá NTĐ Quận 7",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7409141,
+      "longitude": 106.7290608,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1308105274",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1308105276",
+      "name": "Sân bóng rổ ngoài trời NTĐ Quận 7",
+      "sports": [
+        "Bóng rổ"
+      ],
+      "address": null,
+      "latitude": 10.7418986,
+      "longitude": 106.7293404,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1308105276",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng rổ"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1308395575",
+      "name": "Sân bóng đá nhà thiếu nhi huyện Nhà Bè",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.6755249,
+      "longitude": 106.7314694,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1308395575",
+      "reviewMethod": "public_source_review",
+      "reviewState": "source_requires_contact",
+      "reason": "Trang nhà thiếu nhi Nhà Bè ghi giá sân là Liên hệ, không có mức số để nhập.",
+      "sourceUrls": [
+        "https://thegioithethao.vn/san-bong-da-nha-thieu-nhi-huyen-nha-be-f-yIPhs"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1308395576",
+      "name": "Sân bóng rổ nhà thiếu nhi huyện Nhà Bè",
+      "sports": [
+        "Bóng rổ"
+      ],
+      "address": null,
+      "latitude": 10.6754551,
+      "longitude": 106.7309514,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1308395576",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng rổ"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1314671854",
+      "name": "Sân bóng Đông Thạnh",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.9050672,
+      "longitude": 106.6356713,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1314671854",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1323498030",
+      "name": "RMIT University Football Pitch",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7297395,
+      "longitude": 106.6916471,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1323498030",
+      "reviewMethod": "public_source_review",
+      "reviewState": "restricted_access",
+      "reason": "RMIT có điều kiện sử dụng cho sinh viên, nhân viên và hội viên; miễn phí nội bộ không phải giá cho khách thuê ngoài.",
+      "sourceUrls": [
+        "https://www.rmit.edu.vn/students/campus-life/sports-and-fitness/rmit-active-hub-saigon-south"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1323498075",
+      "name": "Sân Banh Đại Học Cảnh Sát",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7350765,
+      "longitude": 106.6958215,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1323498075",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1331546372",
+      "name": "Sân cầu lông",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.7930768,
+      "longitude": 106.7739263,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1331546372",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Cầu lông"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1331547426",
+      "name": "Sân bóng rổ",
+      "sports": [
+        "Bóng rổ"
+      ],
+      "address": null,
+      "latitude": 10.7925802,
+      "longitude": 106.7714126,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1331547426",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng rổ"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1338236842",
+      "name": "Sân thể thao UEL",
+      "sports": [
+        "Bóng đá",
+        "Bóng rổ",
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.8726028,
+      "longitude": 106.777544,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1338236842",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá",
+        "Bóng rổ",
+        "Cầu lông"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1338236843",
+      "name": "Nhà thể thao UEL",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.8727344,
+      "longitude": 106.7779004,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1338236843",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Cầu lông"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1338236844",
+      "name": "Sân bóng rổ UEL",
+      "sports": [
+        "Bóng rổ"
+      ],
+      "address": null,
+      "latitude": 10.8727969,
+      "longitude": 106.777692,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1338236844",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng rổ"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1338236845",
+      "name": "Sân pickleball UEL",
+      "sports": [
+        "Pickleball"
+      ],
+      "address": null,
+      "latitude": 10.8728587,
+      "longitude": 106.7774852,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1338236845",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Pickleball"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1338236846",
+      "name": "Sân bóng đá UEL",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8724568,
+      "longitude": 106.7775869,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1338236846",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1344367123",
+      "name": "Khu Thể thao Tân An",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": "71 Đường Tân An",
+      "latitude": 10.9129463,
+      "longitude": 106.7885424,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1344367123",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1346095784",
+      "name": "SS Arena Pickleball Vũng Tàu 2",
+      "sports": [
+        "Pickleball"
+      ],
+      "address": "226A Lưu Chí Hiếu",
+      "latitude": 10.3793556,
+      "longitude": 107.1170001,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1346095784",
+      "reviewMethod": "public_source_review",
+      "reviewState": "different_branch",
+      "reason": "Điểm OSM là SS Arena Vũng Tàu 2 tại 226A Lưu Chí Hiếu; giá tìm thấy dành cơ sở 05–07 đường 3 Tháng 2, không áp sang cơ sở 2.",
+      "sourceUrls": [
+        "https://antphotos.com/san-pickleball-vung-tau/"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Pickleball"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1347893002",
+      "name": "Sân Cầu lông Hương Giang",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.504915,
+      "longitude": 107.1680264,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1347893002",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Giá tham khảo theo giờ cho cơ sở Hẻm 258 Phan Đăng Lưu, Long Hương, khu vực Bà Rịa. Bài có tiêu đề phụ ghi nhầm Bình Dương; chỉ đối chiếu theo địa chỉ cụ thể. Cần chủ sân xác nhận trước khi sử dụng.",
+      "sourceUrls": [
+        "https://shopvnb.com/san-cau-long-huong-giang.html"
+      ],
+      "pricedSports": [
+        "Cầu lông"
+      ],
+      "missingPriceSports": [],
+      "min": 45000,
+      "max": 50000,
+      "unit": "court_hour",
+      "kind": "range",
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1350606489",
+      "name": "Liber Pickleball",
+      "sports": [
+        "Pickleball"
+      ],
+      "address": null,
+      "latitude": 10.8324188,
+      "longitude": 106.6972216,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1350606489",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Chỉ lấy cột giá vãng lai cho Liber, 235/50/31 Đặng Thùy Trâm: 110.000–190.000 đồng/giờ theo ngày và khung giờ. Không dùng khoảng giá cố định 90.000–170.000 đồng cho khách vãng lai. Lịch chi tiết và giờ mở cửa trong trang chưa thống nhất, cần xác nhận lại.",
+      "sourceUrls": [
+        "https://pickleballplus.vn/san-tap/243"
+      ],
+      "pricedSports": [
+        "Pickleball"
+      ],
+      "missingPriceSports": [],
+      "min": 110000,
+      "max": 190000,
+      "unit": "court_hour",
+      "kind": "range",
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1350606729",
+      "name": "Pickleball 426",
+      "sports": [
+        "Pickleball"
+      ],
+      "address": "16/15 Bình Lợi, Phường Bình Lợi Trung, TP. Hồ Chí Minh",
+      "latitude": 10.8267479,
+      "longitude": 106.7076706,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1350606729",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Giá thuê sân theo khung giờ tại 16/15 Bình Lợi. Nền tảng khác ghi từ 80.000 đồng/giờ; đây là khoảng của riêng bài ShopVNB, không ghép các nguồn thành một bảng giá. Cần liên hệ sân xác nhận giá hiện hành.",
+      "sourceUrls": [
+        "https://shopvnb.com/san-pickleball-426.html"
+      ],
+      "pricedSports": [
+        "Pickleball"
+      ],
+      "missingPriceSports": [],
+      "min": 50000,
+      "max": 180000,
+      "unit": "court_hour",
+      "kind": "range",
+      "publishedAt": "2025-10-23",
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1368997054",
+      "name": "Sân bóng đá Cầu Trắng",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": "21 Kênh Nước Đen, Bình Tân, Hồ Chí Minh",
+      "latitude": 10.7883264,
+      "longitude": 106.6154665,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1368997054",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1369408164",
+      "name": "Sân cầu lông Tây Thạnh",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.8101273,
+      "longitude": 106.6265994,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1369408164",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Nguồn ghi mức khoảng 80.000 đồng mỗi giờ tại 87 Chế Lan Viên, khu Dương Đức Hiền – Chế Lan Viên. Không khẳng định áp dụng mọi khung giờ; không dùng cho các sân tennis hoặc bóng rổ lân cận. Cần liên hệ để xác nhận giá hiện hành.",
+      "sourceUrls": [
+        "https://shopvnb.com/san-cau-long-tay-thanh.html"
+      ],
+      "pricedSports": [
+        "Cầu lông"
+      ],
+      "missingPriceSports": [],
+      "min": 80000,
+      "max": 80000,
+      "unit": "court_hour",
+      "kind": "indicative",
+      "publishedAt": "2025-11-01",
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1369819610",
+      "name": "Sân bóng đá hẻm 278 Gò Xoài",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7896183,
+      "longitude": 106.6055786,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1369819610",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1369868812",
+      "name": "Sân bóng đá Mã Lò",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7843274,
+      "longitude": 106.596581,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1369868812",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1380229378",
+      "name": "Sân Tennis Quyết Tâm",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.8461487,
+      "longitude": 106.6462674,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1380229378",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1391965117",
+      "name": "Sân Pickleball Hồ Biểu Chánh",
+      "sports": [
+        "Pickleball"
+      ],
+      "address": null,
+      "latitude": 10.3729468,
+      "longitude": 107.0886785,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1391965117",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Pickleball"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1411716048",
+      "name": "Mansion Sports Club",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7161123,
+      "longitude": 106.7446185,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1411716048",
+      "reviewMethod": "public_source_review",
+      "reviewState": "source_not_verified",
+      "reason": "Mansion Quận 7 có trang niêm yết nhưng dùng ảnh minh họa và mô tả rất chung; chưa xác nhận nguồn của chủ sân, không nhập mức số.",
+      "sourceUrls": [
+        "https://sanbong.vn/bong-da/mansion-q7"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1417491431",
+      "name": "Sân Tennis 66",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.8141432,
+      "longitude": 106.7277289,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1417491431",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1464064892",
+      "name": "San bóng ngoài trời",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8695042,
+      "longitude": 106.7911486,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1464064892",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1464280464",
+      "name": "Sân Bóng Đá cỏ nhân tạo Penalty",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.5307189,
+      "longitude": 107.4166698,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1464280464",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1520908368",
+      "name": "Tennis Fans League",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.7987537,
+      "longitude": 106.7481629,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1520908368",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1545624814",
+      "name": "CONG VAO",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.8193245,
+      "longitude": 106.7008463,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1545624814",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-9586881865",
+      "name": "Câu Lạc Bộ Cầu Lông T793",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.7471263,
+      "longitude": 106.6985988,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/9586881865",
+      "reviewMethod": "public_source_review",
+      "reviewState": "conflicting_sources",
+      "reason": "Các nguồn về T793 đưa khoảng 60–70, 80–120 và mức cao hơn; chưa chọn được giá hiện hành đáng tin cậy.",
+      "sourceUrls": [
+        "https://shopvnb.com/san-cau-long-t793-quan-7.html",
+        "https://www.decathlon.vn/blog/san-cau-long-quan-7/"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Cầu lông"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-10059435795",
+      "name": "Sân Bóng đá & Bóng rổ Empire City",
+      "sports": [
+        "Bóng rổ",
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7681019,
+      "longitude": 106.7120952,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/10059435795",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng rổ",
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-11754636541",
+      "name": "CLB Cầu Lông Hoàng Văn Thụ",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": "202B Hoàng Văn Thụ, Phú Nhuận, Ho Chi Minh City",
+      "latitude": 10.8002755,
+      "longitude": 106.6700708,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/11754636541",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Cầu lông"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-12107200007",
+      "name": "Sân Bóng Thanh Niên 2",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.8539822,
+      "longitude": 106.6736209,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/12107200007",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-12418249325",
+      "name": "Sân Cầu Lông The B Hương Lộ 2",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": "859 Hương Lộ 2, Bình Tân, Hồ Chí Minh",
+      "latitude": 10.7664071,
+      "longitude": 106.6000565,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/12418249325",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Giá thuê một sân theo giờ, tùy khung giờ. Nguồn không nêu ngày hết hiệu lực và khuyến nghị liên hệ sân vì bảng giá thay đổi theo tháng. Không bao gồm combo và ưu đãi. Đối chiếu theo tên sân và địa chỉ 859 Hương Lộ 2.",
+      "sourceUrls": [
+        "https://shopvnb.com/san-cau-long-the-b-huong-lo-2.html"
+      ],
+      "pricedSports": [
+        "Cầu lông"
+      ],
+      "missingPriceSports": [],
+      "min": 40000,
+      "max": 80000,
+      "unit": "court_hour",
+      "kind": "range",
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-12496314223",
+      "name": "Outdoor badminton court",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.8270363,
+      "longitude": 106.7018339,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/12496314223",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Cầu lông"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-12497841194",
+      "name": "BOSS Pickleball",
+      "sports": [
+        "Pickleball"
+      ],
+      "address": null,
+      "latitude": 10.8433413,
+      "longitude": 106.8293668,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/12497841194",
+      "reviewMethod": "public_source_review",
+      "reviewState": "identity_ambiguous",
+      "reason": "BOSS: kết quả có cơ sở ở Trường Thọ khác điểm OSM gần Nguyễn Xiển; không lấy giá của cơ sở cùng tên.",
+      "sourceUrls": [
+        "https://shopvnb.com/san-pickleball-co-may-ban-bong.html"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Pickleball"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-12497844578",
+      "name": "Sân Pickleball Thành Thái",
+      "sports": [
+        "Pickleball"
+      ],
+      "address": null,
+      "latitude": 10.768478,
+      "longitude": 106.6655597,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/12497844578",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Giá một sân mỗi giờ, tùy giờ chơi, cơ sở 3/9 Thành Thái, Quận 10. Bài không chia cụ thể theo ngày hoặc loại sân; cần xác nhận giá trước khi đến.",
+      "sourceUrls": [
+        "https://shopvnb.com/san-pickleball-thanh-thai.html"
+      ],
+      "pricedSports": [
+        "Pickleball"
+      ],
+      "missingPriceSports": [],
+      "min": 120000,
+      "max": 200000,
+      "unit": "court_hour",
+      "kind": "range",
+      "publishedAt": "2025-12-06",
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-12497854425",
+      "name": "Lan Anh Pickleball",
+      "sports": [
+        "Pickleball"
+      ],
+      "address": null,
+      "latitude": 10.778715,
+      "longitude": 106.6780456,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/12497854425",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Giá thuê pickleball tại CLB Lan Anh, 291 Cách Mạng Tháng 8, tùy giờ chơi. Không áp dụng cho hai điểm tennis cùng tên Lan Anh có tọa độ khác trong dữ liệu OSM. Cần xác nhận giá hiện hành.",
+      "sourceUrls": [
+        "https://shopvnb.com/san-pickleball-lan-anh.html"
+      ],
+      "pricedSports": [
+        "Pickleball"
+      ],
+      "missingPriceSports": [],
+      "min": 150000,
+      "max": 200000,
+      "unit": "court_hour",
+      "kind": "range",
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-12497855064",
+      "name": "DD9",
+      "sports": [
+        "Pickleball"
+      ],
+      "address": null,
+      "latitude": 10.8338899,
+      "longitude": 106.8313298,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/12497855064",
+      "reviewMethod": "public_source_review",
+      "reviewState": "mixed_ticket_and_rental",
+      "reason": "DD9: khoảng 70.000–250.000 đồng gộp thuê sân và vé social; các địa chỉ nguồn cũng khác nhau. Chưa tách được giá thuê sân.",
+      "sourceUrls": [
+        "https://shopvnb.com/dd9-pickleball.html"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Pickleball"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-12497860289",
+      "name": "PicknBoom",
+      "sports": [
+        "Pickleball"
+      ],
+      "address": null,
+      "latitude": 10.8251462,
+      "longitude": 106.8300437,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/12497860289",
+      "reviewMethod": "public_source_review",
+      "reviewState": "unclear_unit",
+      "reason": "PicknBoom: bài tổng hợp có số tiền nhưng chưa làm rõ đơn vị và thời hạn; nguồn khác chỉ có địa chỉ. Chưa thêm giá thuê theo giờ.",
+      "sourceUrls": [
+        "https://www.suasantennis.com/vi/news/Thong-tin-huu-ich/danh-sach-cac-dia-chi-cho-thue-san-pickleball-tai-tp-hcm-moi-nhat-2025-449.html",
+        "https://dayhocpickleball.vn/danh-sach-cac-san-pickleball-tai-tp-hcm.html"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Pickleball"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-12497865800",
+      "name": "CLB Pickleball Ho Xuan Huong",
+      "sports": [
+        "Pickleball"
+      ],
+      "address": null,
+      "latitude": 10.7775068,
+      "longitude": 106.6875875,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/12497865800",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Khoảng giá thuê sân theo giờ tại số 2 Hồ Xuân Hương, Quận 3, tùy giờ chơi. Không phải cơ sở cùng tên ở Ngô Thời Nhiệm hoặc Đà Lạt. Nguồn không xác định thời hạn bảng giá; cần liên hệ xác nhận.",
+      "sourceUrls": [
+        "https://thegioipickleball.vn/san-pickleball-o-quan-3"
+      ],
+      "pricedSports": [
+        "Pickleball"
+      ],
+      "missingPriceSports": [],
+      "min": 180000,
+      "max": 250000,
+      "unit": "court_hour",
+      "kind": "range",
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-12497875023",
+      "name": "ÔNG ĐỊA PICKLEBALL CLUB",
+      "sports": [
+        "Pickleball"
+      ],
+      "address": null,
+      "latitude": 10.7958978,
+      "longitude": 106.7457683,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/12497875023",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Giá thuê sân theo giờ tại 93/1 Nguyễn Hoàng, An Phú, tùy khung giờ. Chưa có bảng chia giờ và ngày hiệu lực; liên hệ chủ sân xác nhận.",
+      "sourceUrls": [
+        "https://shopvnb.com/san-pickleball-ong-dia.html"
+      ],
+      "pricedSports": [
+        "Pickleball"
+      ],
+      "missingPriceSports": [],
+      "min": 78000,
+      "max": 250000,
+      "unit": "court_hour",
+      "kind": "range",
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-13503266356",
+      "name": "Sân bóng",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7726081,
+      "longitude": 106.6593159,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/13503266356",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-13579698304",
+      "name": "Rạch Cát Badminton Club",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.7148856,
+      "longitude": 106.626184,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/13579698304",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Giá một sân theo giờ thấp điểm đến cao điểm. Cơ sở được bài viết xác định tại 186A Mễ Cốc, Quận 8; không phải sân Rạch Cát ở Cần Đước. Chưa có lịch giá chi tiết hoặc ngày hết hiệu lực.",
+      "sourceUrls": [
+        "https://shopvnb.com/clb-cau-long-rach-cat.html"
+      ],
+      "pricedSports": [
+        "Cầu lông"
+      ],
+      "missingPriceSports": [],
+      "min": 45000,
+      "max": 130000,
+      "unit": "court_hour",
+      "kind": "range",
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-14190040145",
+      "name": "Sân bóng King's Sport",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.86645,
+      "longitude": 106.6843876,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/14190040145",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-14256832895",
+      "name": "Sân bóng đá mini Cầu Xéo",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7983405,
+      "longitude": 106.6248827,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/14256832895",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-118946692",
+      "name": "Nhà thi đấu Cầu lông",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.3642163,
+      "longitude": 107.077779,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/118946692",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Cầu lông"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-149904640",
+      "name": "Sân bóng đá Phú Mỹ Q7 (sân cát)",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7122932,
+      "longitude": 106.7403758,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/149904640",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-270876360",
+      "name": "SVĐ Hắc Dịch",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.6375058,
+      "longitude": 107.1136468,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/270876360",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-331167453",
+      "name": "Hồ bơi Phú Thọ",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.7646267,
+      "longitude": 106.658806,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/331167453",
+      "reviewMethod": "public_source_review",
+      "reviewState": "sport_conflict",
+      "reason": "Tên điểm là Hồ bơi Phú Thọ nhưng môn được gắn là cầu lông. Không lấy giá vé bơi hoặc giá sân Phú Thọ khác để gán.",
+      "sourceUrls": [
+        "https://www.eduoka.com/location/cau-lac-bo-boi-lan-phu-tho"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Cầu lông"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-665450065",
+      "name": "Sân vận động Thống Nhất",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": "138 Đào Duy Từ",
+      "latitude": 10.7607013,
+      "longitude": 106.6632761,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/665450065",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-714534691",
+      "name": "Sân bóng đá mini Thăng Long",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": "Đường số 4, Bình Tân",
+      "latitude": 10.7558165,
+      "longitude": 106.6070429,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/714534691",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-714543829",
+      "name": "sân bóng đường số 4",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": "đường số 4, Bình Tân",
+      "latitude": 10.7573248,
+      "longitude": 106.6072211,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/714543829",
+      "reviewMethod": "identity_screening",
+      "reviewState": "insufficient_identity",
+      "reason": "Tên chung chung hoặc thiếu địa chỉ định danh. Không lấy giá trung bình khu vực để thay giá của sân này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-750361871",
+      "name": "Sân vận động Quân khu 7",
+      "sports": [
+        "Bóng đá",
+        "Cầu lông"
+      ],
+      "address": "202 Hoàng Văn Thụ, Tân Bình, Thành phố Hồ Chí Minh",
+      "latitude": 10.8018529,
+      "longitude": 106.6672646,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/750361871",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá",
+        "Cầu lông"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-786415062",
+      "name": "CLB Cầu lông Trung Thành",
+      "sports": [
+        "Cầu lông"
+      ],
+      "address": null,
+      "latitude": 10.3759947,
+      "longitude": 107.1148868,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/786415062",
+      "reviewMethod": "public_source_review",
+      "reviewState": "public_reference",
+      "reason": "Khoảng giá bài tổng hợp cho Trung Thành, đường 3 Tháng 2, Vũng Tàu. Đối chiếu cơ sở 379 đường 3 Tháng 2; không phải sân Trung Thành ở địa phương khác. Nguồn chưa công bố lịch giá theo ngày, giờ.",
+      "sourceUrls": [
+        "https://shopcaulong.org/san-cau-long-vung-tau.html"
+      ],
+      "pricedSports": [
+        "Cầu lông"
+      ],
+      "missingPriceSports": [],
+      "min": 40000,
+      "max": 60000,
+      "unit": "court_hour",
+      "kind": "range",
+      "publishedAt": "2026-10-01",
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1213393836",
+      "name": "Sân Bóng Đá Mini Tân Thới Hòa",
+      "sports": [
+        "Bóng đá trong nhà"
+      ],
+      "address": null,
+      "latitude": 10.7601336,
+      "longitude": 106.6308277,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1213393836",
+      "reviewMethod": "public_source_review",
+      "reviewState": "source_requires_contact",
+      "reason": "Sân con trong cụm Tân Thới Hòa; chưa có mức giá riêng được công khai.",
+      "sourceUrls": [
+        "https://www.sporta.vn/san/san-bong-da-mini-tan-thoi-hoa"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá trong nhà"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1213393837",
+      "name": "Sân Bóng Đá Mini Tân Thới Hòa",
+      "sports": [
+        "Bóng đá trong nhà"
+      ],
+      "address": "17 Hẻm 17 Lương Minh Nguyệt, Quận Tân Phú, Ho Chi Minh City",
+      "latitude": 10.7601887,
+      "longitude": 106.6306671,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1213393837",
+      "reviewMethod": "public_source_review",
+      "reviewState": "source_requires_contact",
+      "reason": "Sân con trong cụm Tân Thới Hòa; chưa có mức giá riêng được công khai.",
+      "sourceUrls": [
+        "https://www.sporta.vn/san/san-bong-da-mini-tan-thoi-hoa"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá trong nhà"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1213393838",
+      "name": "Sân Bóng Đá Mini Tân Thới Hòa",
+      "sports": [
+        "Bóng đá trong nhà"
+      ],
+      "address": null,
+      "latitude": 10.7602442,
+      "longitude": 106.6305076,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1213393838",
+      "reviewMethod": "public_source_review",
+      "reviewState": "source_requires_contact",
+      "reason": "Sân con trong cụm Tân Thới Hòa; chưa có mức giá riêng được công khai.",
+      "sourceUrls": [
+        "https://www.sporta.vn/san/san-bong-da-mini-tan-thoi-hoa"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá trong nhà"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1225156110",
+      "name": "Sân tennis khu Greenlife 13C",
+      "sports": [
+        "Quần vợt"
+      ],
+      "address": null,
+      "latitude": 10.7128329,
+      "longitude": 106.6443451,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1225156110",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1246308670",
+      "name": "Khu Thể dục thể thao Phú Thọ",
+      "sports": [
+        "Bóng đá",
+        "Bóng rổ"
+      ],
+      "address": null,
+      "latitude": 10.7692107,
+      "longitude": 106.657469,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1246308670",
+      "reviewMethod": "public_source_review",
+      "reviewState": "partial_sport_coverage",
+      "reason": "Chỉ áp dụng tham khảo khu sân bóng đá Phú Thọ, 219 Lý Thường Kiệt; giá thay đổi theo loại sân và giờ. Không phải giá bóng rổ, cầu lông hoặc thuê toàn bộ nhà thi đấu.",
+      "sourceUrls": [
+        "https://www.decathlon.vn/blog/san-bong-da-phui-sai-gon/"
+      ],
+      "pricedSports": [
+        "Bóng đá"
+      ],
+      "missingPriceSports": [
+        "Bóng rổ"
+      ],
+      "min": 270000,
+      "max": 700000,
+      "unit": "court_hour",
+      "kind": "range",
+      "publishedAt": "2026-06-24",
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1368995689",
+      "name": "Trung tâm Văn hóa - TDTT Quận Tân Phú",
+      "sports": [
+        "Bóng rổ"
+      ],
+      "address": "502 Luỹ Bán Bích, Tân Phú, Thành phố Hồ Chí Minh",
+      "latitude": 10.7820785,
+      "longitude": 106.6357411,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1368995689",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng rổ"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1369407221",
+      "name": "Trung tâm VH - TDTT Quận Tân Phú",
+      "sports": [
+        "Quần vợt",
+        "Cầu lông",
+        "Bóng rổ"
+      ],
+      "address": "97 Đường Dương Đức Hiền, Quận Tân Phú, Hồ Chí Minh",
+      "latitude": 10.8105455,
+      "longitude": 106.6264686,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1369407221",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Quần vợt",
+        "Cầu lông",
+        "Bóng rổ"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1369407258",
+      "name": "Nhà thi đấu Tây Thạnh - Quận Tân Phú",
+      "sports": [
+        "Bóng rổ",
+        "Cầu lông"
+      ],
+      "address": "97 Đường Dương Đức Hiền, Quận Tân Phú, Hồ Chí Minh",
+      "latitude": 10.8103852,
+      "longitude": 106.6262,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1369407258",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng rổ",
+        "Cầu lông"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-way-1379652821",
+      "name": "Trung tâm Văn hóa Thể thao huyện Châu Đức",
+      "sports": [
+        "Bóng rổ",
+        "Bóng đá"
+      ],
+      "address": "Quốc lộ 56",
+      "latitude": 10.6196533,
+      "longitude": 107.2377306,
+      "osmSourceUrl": "https://www.openstreetmap.org/way/1379652821",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng rổ",
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-1628403128",
+      "name": "Sân Bóng Mini Nghĩa Thảo",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": null,
+      "latitude": 10.7110943,
+      "longitude": 106.742877,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/1628403128",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-6538599359",
+      "name": "Sân Bóng Đá Mini Bình Trị",
+      "sports": [
+        "Bóng đá"
+      ],
+      "address": "Chiến Lược, Bình Tân",
+      "latitude": 10.7605388,
+      "longitude": 106.6092141,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/6538599359",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-11991216701",
+      "name": "Sân bóng đá Sông Giồng",
+      "sports": [
+        "Bóng đá trong nhà"
+      ],
+      "address": "Thân Văn Nhiếp",
+      "latitude": 10.7885258,
+      "longitude": 106.7529413,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/11991216701",
+      "reviewMethod": "catalog_review_no_usable_quote",
+      "reviewState": "needs_contact",
+      "reason": "Chưa thu thập được nguồn giá đủ rõ về đúng cơ sở, môn và đơn vị tính trong đợt rà soát này.",
+      "sourceUrls": [],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Bóng đá trong nhà"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    },
+    {
+      "id": "osm-node-12132129720",
+      "name": "Pickleball Xuân Anh",
+      "sports": [
+        "Pickleball"
+      ],
+      "address": null,
+      "latitude": 10.8372195,
+      "longitude": 106.8347018,
+      "osmSourceUrl": "https://www.openstreetmap.org/node/12132129720",
+      "reviewMethod": "public_source_review",
+      "reviewState": "conflicting_sources",
+      "reason": "Xuân Anh: các nguồn ghi 100.000–110.000 và 130.000–150.000 đồng/giờ; chưa xác định cùng nhóm khách, khung giờ và hiệu lực.",
+      "sourceUrls": [
+        "https://shopvnb.com/san-pickleball-xuan-anh.html",
+        "https://munichgroup.vn/san-pickleball-thu-duc/"
+      ],
+      "pricedSports": [],
+      "missingPriceSports": [
+        "Pickleball"
+      ],
+      "min": null,
+      "max": null,
+      "unit": null,
+      "kind": null,
+      "publishedAt": null,
+      "ownerConfirmed": false,
+      "bookingEnabled": false
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL-1.0",
+    "licenseUrl": "https://www.openstreetmap.org/copyright",
+    "extractedAt": "10/17/2026 15:39:35",
+    "note": "Imported discovery candidates. Names, location, sport and commercial availability require verification. No booking, prices, ratings or image rights are inferred.",
+    "selectionNote": "Two entries selected by the project user for discovery. Not approved partner facilities."
+  },
+  "venues": [
+    {
+      "id": "osm-way-112337549",
+      "name": "Sân Tennis",
+      "sports": [
+        "Quần vợt"
+      ],
+      "rawSport": "tennis",
+      "address": null,
+      "latitude": 10.7982847,
+      "longitude": 106.7407192,
+      "coordinateKind": "representative_center",
+      "website": null,
+      "pricePerHour": null,
+      "rating": null,
+      "image": null,
+      "verified": false,
+      "bookingEnabled": false,
+      "source": "OpenStreetMap",
+      "sourceId": "way/112337549",
+      "sourceUrl": "https://www.openstreetmap.org/way/112337549",
+      "extractedAt": "10/17/2026 15:39:35",
+      "verification": {
+        "locationCheckedByUser": true,
+        "reportedOn": "2026-10-19",
+        "scope": "User selected these entries after checking location. Address, rental availability, rates, photos and opening hours remain unconfirmed."
+      }
+    },
+    {
+      "id": "osm-way-165567733",
+      "name": "Sân vận động Hoa Lư",
+      "sports": [
+        "Bóng đá"
+      ],
+      "rawSport": "soccer",
+      "address": null,
+      "latitude": 10.7879111,
+      "longitude": 106.7016179,
+      "coordinateKind": "representative_center",
+      "website": null,
+      "pricePerHour": null,
+      "rating": null,
+      "image": null,
+      "verified": false,
+      "bookingEnabled": false,
+      "source": "OpenStreetMap",
+      "sourceId": "way/165567733",
+      "sourceUrl": "https://www.openstreetmap.org/way/165567733",
+      "extractedAt": "10/17/2026 15:39:35",
+      "verification": {
+        "locationCheckedByUser": true,
+        "reportedOn": "2026-10-19",
+        "scope": "User selected these entries after checking location. Address, rental availability, rates, photos and opening hours remain unconfirmed."
+      }
+    }
+  ]
+}

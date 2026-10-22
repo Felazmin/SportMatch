@@ -1,0 +1,173 @@
+{
+  "source": "D:\\PTUDDD\\test_do_an",
+  "identifiers_checked": 41,
+  "utf8_nfc_files_checked": 27,
+  "passed": true,
+  "details": [
+    {
+      "file": "lib/auth/demo_session.dart",
+      "identifier": "class DemoSession"
+    },
+    {
+      "file": "lib/auth/demo_session.dart",
+      "identifier": "class DemoUser"
+    },
+    {
+      "file": "lib/auth/demo_session.dart",
+      "identifier": "reserve("
+    },
+    {
+      "file": "lib/auth/demo_session.dart",
+      "identifier": "retrySave("
+    },
+    {
+      "file": "lib/auth/demo_management.dart",
+      "identifier": "extension DemoManagement"
+    },
+    {
+      "file": "lib/auth/demo_management.dart",
+      "identifier": "startTransfer("
+    },
+    {
+      "file": "lib/auth/demo_management.dart",
+      "identifier": "saveProofDraft("
+    },
+    {
+      "file": "lib/auth/demo_management.dart",
+      "identifier": "saveStudentDraft("
+    },
+    {
+      "file": "lib/auth/demo_management.dart",
+      "identifier": "submitProof("
+    },
+    {
+      "file": "lib/auth/demo_management.dart",
+      "identifier": "reviewPayment("
+    },
+    {
+      "file": "lib/auth/demo_management.dart",
+      "identifier": "requestCancellation("
+    },
+    {
+      "file": "lib/auth/demo_management.dart",
+      "identifier": "reviewCancellation("
+    },
+    {
+      "file": "lib/auth/demo_management.dart",
+      "identifier": "canRequestBookingCancellation("
+    },
+    {
+      "file": "lib/auth/demo_management.dart",
+      "identifier": "estimatedBookingRefund("
+    },
+    {
+      "file": "lib/auth/demo_facilities_session.dart",
+      "identifier": "saveFacility("
+    },
+    {
+      "file": "lib/auth/demo_facilities_session.dart",
+      "identifier": "submitFacility("
+    },
+    {
+      "file": "lib/auth/demo_facilities_session.dart",
+      "identifier": "updatePendingFacility("
+    },
+    {
+      "file": "lib/auth/demo_facilities_session.dart",
+      "identifier": "reviewFacility("
+    },
+    {
+      "file": "lib/auth/demo_facilities_session.dart",
+      "identifier": "expectedRevision"
+    },
+    {
+      "file": "lib/auth/demo_facilities_session.dart",
+      "identifier": "bool reject = false"
+    },
+    {
+      "file": "lib/auth/demo_employee_access_session.dart",
+      "identifier": "configureEmployeeAccess("
+    },
+    {
+      "file": "lib/auth/demo_employee_access_session.dart",
+      "identifier": "loginEmployee("
+    },
+    {
+      "file": "lib/auth/demo_employee_access_session.dart",
+      "identifier": "employeeSchedule"
+    },
+    {
+      "file": "lib/auth/demo_employee_access_session.dart",
+      "identifier": "employeeSetAttendance("
+    },
+    {
+      "file": "lib/auth/demo_employee_access_session.dart",
+      "identifier": "employeeConfirmPayment("
+    },
+    {
+      "file": "lib/auth/demo_workflow_session.dart",
+      "identifier": "payTournamentDemo("
+    },
+    {
+      "file": "lib/auth/demo_workflow_session.dart",
+      "identifier": "recordWorkflowRefund("
+    },
+    {
+      "file": "lib/demo/demo_activities.dart",
+      "identifier": "class DemoActivity"
+    },
+    {
+      "file": "lib/demo/demo_activities.dart",
+      "identifier": "final DemoEvent event"
+    },
+    {
+      "file": "lib/demo/demo_activities.dart",
+      "identifier": "final int revision"
+    },
+    {
+      "file": "lib/demo/demo_events.dart",
+      "identifier": "class DemoEvent"
+    },
+    {
+      "file": "lib/demo/demo_events.dart",
+      "identifier": "scheduledStart"
+    },
+    {
+      "file": "lib/demo/demo_events.dart",
+      "identifier": "durationMinutes"
+    },
+    {
+      "file": "lib/demo/demo_employee_access.dart",
+      "identifier": "class DemoEmployeeAccess"
+    },
+    {
+      "file": "lib/demo/demo_employee_access.dart",
+      "identifier": "facilityIds"
+    },
+    {
+      "file": "lib/demo/demo_employee_access.dart",
+      "identifier": "permissions"
+    },
+    {
+      "file": "lib/demo/demo_cancellation_policy.dart",
+      "identifier": "class CancellationPolicy"
+    },
+    {
+      "file": "lib/demo/demo_cancellation_policy.dart",
+      "identifier": "canRequest("
+    },
+    {
+      "file": "lib/demo/demo_cancellation_policy.dart",
+      "identifier": "refundAmount("
+    },
+    {
+      "file": "lib/demo/demo_finance.dart",
+      "identifier": "enum DemoRole { player, owner, admin }"
+    },
+    {
+      "file": "lib/demo/demo_finance.dart",
+      "identifier": "enum DemoPaymentState { awaitingProof, pending, rejected, approved }"
+    }
+  ],
+  "note": "Identifier and encoding checks complement manual review; they do not prove every business rule or replace Flutter tests."
+}

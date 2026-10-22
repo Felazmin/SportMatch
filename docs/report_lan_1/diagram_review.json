@@ -1,0 +1,103 @@
+{
+  "pages": 24,
+  "issues": [],
+  "details": [
+    {
+      "page": "UC00",
+      "routed_segments": 39
+    },
+    {
+      "page": "UC01",
+      "routed_segments": 32
+    },
+    {
+      "page": "UC02",
+      "routed_segments": 32
+    },
+    {
+      "page": "UC03",
+      "routed_segments": 19
+    },
+    {
+      "page": "UC04",
+      "routed_segments": 27
+    },
+    {
+      "page": "SQ01",
+      "routed_segments": 0
+    },
+    {
+      "page": "SQ02",
+      "routed_segments": 0
+    },
+    {
+      "page": "SQ03",
+      "routed_segments": 0
+    },
+    {
+      "page": "SQ04",
+      "routed_segments": 0
+    },
+    {
+      "page": "SQ05",
+      "routed_segments": 0
+    },
+    {
+      "page": "SQ06",
+      "routed_segments": 0
+    },
+    {
+      "page": "ER01",
+      "routed_segments": 39
+    },
+    {
+      "page": "ER02",
+      "routed_segments": 40
+    },
+    {
+      "page": "ER03",
+      "routed_segments": 48
+    },
+    {
+      "page": "ER04",
+      "routed_segments": 36
+    },
+    {
+      "page": "ER05",
+      "routed_segments": 35
+    },
+    {
+      "page": "ER06",
+      "routed_segments": 43
+    },
+    {
+      "page": "CL01",
+      "routed_segments": 15
+    },
+    {
+      "page": "CL02",
+      "routed_segments": 14
+    },
+    {
+      "page": "DP01",
+      "routed_segments": 9
+    },
+    {
+      "page": "DP02",
+      "routed_segments": 12
+    },
+    {
+      "page": "UX01",
+      "routed_segments": 72
+    },
+    {
+      "page": "ST01",
+      "routed_segments": 16
+    },
+    {
+      "page": "ST02",
+      "routed_segments": 21
+    }
+  ],
+  "note": "Sequence lifelines/messages intersect intentionally; connected diagram edges are checked here. Crossings use arc bridges."
+}

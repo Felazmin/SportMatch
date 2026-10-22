@@ -1,0 +1,451 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Báo cáo đồ án lần 1 SportMatch</title><style>
+*{box-sizing:border-box}body{margin:0;color:#15251e;background:#eef2ef;font:16px/1.65 Arial,sans-serif;letter-spacing:0}
+main{max-width:1020px;margin:28px auto;background:white;padding:52px 62px}
+h1,h2,h3{color:#000;line-height:1.25;break-after:avoid}h1{font-size:30px;margin-top:0}h2{font-size:23px;margin-top:40px}h3{font-size:18px;margin-top:28px}
+p{margin:10px 0 14px}a{color:#086749;overflow-wrap:anywhere}code{font:13px Consolas,monospace;overflow-wrap:anywhere}pre{white-space:pre-wrap;background:#f4f6f5;padding:15px;font-size:13px}
+table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.5;margin:15px 0 22px;table-layout:fixed}th,td{border:1px solid #d9d9d9;padding:9px 10px;vertical-align:middle;overflow-wrap:anywhere}th{background:#dcebe4;color:#000;text-align:left}tr:nth-child(even){background:#f7f9f8}thead{display:table-header-group}tr{break-inside:avoid}
+.requirements th:nth-child(1){width:11%}.requirements th:nth-child(2){width:35%}.requirements th:nth-child(3){width:54%}.trace th:nth-child(1){width:12%}.trace th:nth-child(2){width:14%}.trace th:nth-child(3),.trace th:nth-child(4){width:29%}.trace th:nth-child(5){width:16%}.usecases th:nth-child(1){width:11%}.usecases th:nth-child(2){width:43%}.usecases th:nth-child(3){width:20%}.usecases th:nth-child(4){width:26%}
+img{max-width:100%;height:auto}figure{margin:20px 0}figcaption{font-size:13px;color:#51635b}nav{border-bottom:1px solid #d9d9d9;padding-bottom:20px;margin-bottom:26px}nav a{display:inline-block;margin:3px 12px 3px 0}
+.diagram{break-before:page;page:diagram;margin-top:35px}.diagram img{width:100%;max-height:680px;object-fit:contain;object-position:left top}.diagram p{font-size:13px}.gallery{display:flex;gap:24px;align-items:flex-start}.gallery figure{flex:1}.gallery img{max-height:650px;object-fit:contain}
+.muted{color:#52635c;font-size:14px}.link-table td:first-child{width:80px}.link-table td:last-child{width:160px}
+@media(max-width:700px){main{margin:0;padding:24px 18px}h1{font-size:25px}table{font-size:12px}th,td{padding:7px 5px}.gallery{flex-direction:column}}
+@page{size:Letter;margin:18mm 17mm 20mm}@page diagram{size:A3 landscape;margin:15mm}@page sequence{size:A3 portrait;margin:15mm}
+@media print{body{background:white;font-size:10.5pt;line-height:1.5}main{padding:0;margin:0;max-width:none}nav,.noprint{display:none}h1{font-size:23pt}h2{font-size:17pt}h3{font-size:13pt}table{font-size:9pt}a{color:#153f2f;text-decoration:none}h2{margin-top:24px}figure{break-inside:avoid}.diagram{margin:0;break-after:page}.diagram h2{font-size:17pt;margin:0 0 8px}.diagram p{margin:4px 0 12px}.diagram img{max-height:900px}.diagram.sequence{page:sequence}.diagram.sequence img{max-height:1340px}.gallery img{max-height:440px}}
+</style><main><nav><a href="index.html">Bộ tài liệu</a><a href="BAO_CAO.html">Báo cáo</a><a href="drawio_links.html">Mở sơ đồ draw.io</a><a href="data_dictionary.html">Từ điển dữ liệu</a></nav><h1 id="Ph-n-t-ch-thi-t-k-h-th-ng-t-s-n-th-thao-SportMatch">Phân tích thiết kế hệ thống đặt sân thể thao SportMatch</h1>
+<p>Báo cáo đồ án lần 1 về phân tích thiết kế hệ thống thông tin và nguyên mẫu giao diện. Tài liệu được lập từ source Flutter tại <code>D:/PTUDDD/test_<wbr>do_<wbr>an</code>, đối chiếu ngày 10/10/2026. Tên hiển thị hiện tại của ứng dụng là NVH Sports; SportMatch là tên nghiệp vụ trong một số mẫu thiết kế. Nhóm cần thống nhất tên chính thức trước khi nộp.</p>
+<p><strong>Thông tin cần bổ sung trước khi nộp:</strong> trường, khoa, học phần, giảng viên, lớp, nhóm, thành viên và mã sinh viên. Tài liệu không tự điền các thông tin chưa được cung cấp.</p>
+<section><h2>Mục lục</h2><ol><li><a href="#1-T-ng-quan-v-ph-m-vi">Tổng quan và phạm vi</a></li><li><a href="#2-URD-v-y-u-c-u-ng-i-d-ng">URD và yêu cầu người dùng</a></li><li><a href="#3-Use-case-v-c-t">Use case và đặc tả</a></li><li><a href="#4-Thi-t-k-ki-n-tr-c-v-ch-ng-tr-nh">Thiết kế kiến trúc và chương trình</a></li><li><a href="#5-Thi-t-k-d-li-u-v-ERD">Thiết kế dữ liệu và ERD</a></li><li><a href="#6-Deployment-diagram-v-tri-n-khai">Deployment diagram và triển khai</a></li><li><a href="#7-URD-giao-di-n-v-lu-ng-UI-UX">URD giao diện và luồng UI UX</a></li><li><a href="#8-Truy-v-t-v-k-ho-ch-ki-m-th">Truy vết và kế hoạch kiểm thử</a></li><li><a href="#9-nh-gi-l-n-1-v-c-ng-vi-c-ti-p-theo">Đánh giá lần 1 và công việc tiếp theo</a></li><li><a href="#10-Ph-l-c-t-i-kho-n-v-ngu-n-i-chi-u">Phụ lục tài khoản và nguồn đối chiếu</a></li></ol></section><h2 id="1-T-ng-quan-v-ph-m-vi">1 Tổng quan và phạm vi</h2>
+<h3 id="1-1-B-i-to-n">1.1 Bài toán</h3>
+<p>Người chơi cần tìm sân, chọn giờ trống, đặt sân, gửi chứng từ thanh toán và theo dõi xác nhận. Chủ sân cần quản lý cơ sở, lịch, giá, nhân viên và các yêu cầu của khách. Nhân viên chỉ thực hiện nghiệp vụ được giao tại cơ sở được phân công. Admin kiểm duyệt cơ sở, người dùng và nội dung cộng đồng.</p>
+<p>Mục tiêu của lần báo cáo này là chứng minh được layout, cấu trúc chương trình và các luồng UI/UX có dữ liệu kiểm thử. Báo cáo không khẳng định đã hoàn thành hệ thống thương mại hoặc backend đa người dùng.</p>
+<h3 id="1-2-Ranh-gi-i-tri-n-khai">1.2 Ranh giới triển khai</h3>
+<table class=""><thead><tr><th>Hạng mục</th><th>Hiện trạng</th><th>Cách thể hiện trong báo cáo</th></tr></thead><tbody>
+<tr><td>Ứng dụng khách</td><td>Flutter, có APK Android debug chạy trên giả lập</td><td>Đã triển khai nguyên mẫu</td></tr>
+<tr><td>Nghiệp vụ</td><td>Xử lý bằng DemoSession và các extension theo nhóm chức năng</td><td>Đã triển khai cục bộ</td></tr>
+<tr><td>Dữ liệu</td><td>Snapshot JSON lưu qua FlutterSecureStorage</td><td>Đã triển khai cục bộ, không phải DB quan hệ</td></tr>
+<tr><td>Thanh toán</td><td>Gửi ảnh chứng từ và xác nhận thủ công; giải đấu có thanh toán mô phỏng</td><td>Không kết nối ngân hàng hoặc ví thật</td></tr>
+<tr><td>Bản đồ</td><td>Tile mạng, tra địa chỉ và GPS theo quyền thiết bị</td><td>Phụ thuộc mạng và dịch vụ ngoài</td></tr>
+<tr><td>Thông báo và email</td><td>Trạng thái/thông báo trong ứng dụng</td><td>Chưa có dịch vụ gửi email hoặc push thật</td></tr>
+<tr><td>Backend và DB quan hệ</td><td>Chưa nối vào ứng dụng</td><td>Thiết kế đề xuất trong SQL và ERD</td></tr>
+<tr><td>Chạy nhiều thiết bị</td><td>Mỗi thiết bị có dữ liệu riêng</td><td>Chưa đồng bộ; demo liên vai trò trên cùng thiết bị</td></tr>
+<tr><td>iOS và web</td><td>Có thư mục iOS; không có thư mục web trong source hiện tại</td><td>Chưa nghiệm thu trên iOS/web</td></tr>
+</tbody></table>
+<h3 id="1-3-Nh-ng-gi-i-h-n-c-n-c-ng-b">1.3 Những giới hạn cần công bố</h3>
+<p>Mã hiện tại có ba giá trị <code>DemoRole</code>: player, owner, admin. Nhân viên là một phiên đăng nhập riêng dựa trên <code>DemoEmployeeAccess</code>, không phải giá trị thứ tư trong enum. Về phân tích nghiệp vụ vẫn có bốn tác nhân. Một tài khoản chủ sân và một tài khoản admin mẫu không chứng minh được quản trị nhiều chủ sân/admin độc lập. Chưa có ủy quyền một phần từ admin này sang admin khác.</p>
+<p>Tên và địa chỉ sân có tham khảo địa điểm tại TP.HCM; ảnh, giá, số sân, hồ sơ, người sở hữu và giao dịch là giả lập. Không trình bày các giá trị này như thông tin chính thức của cơ sở thật.</p>
+<h2 id="2-URD-v-y-u-c-u-ng-i-d-ng">2 URD và yêu cầu người dùng</h2>
+<h3 id="2-1-T-c-nh-n">2.1 Tác nhân</h3>
+<table class="requirements"><thead><tr><th>Mã</th><th>Tác nhân</th><th>Mục tiêu và phạm vi</th></tr></thead><tbody>
+<tr><td>A0</td><td>Khách chưa đăng nhập</td><td>Xem nội dung công khai, tìm sân, đăng ký/đăng nhập</td></tr>
+<tr><td>A1</td><td>Khách hàng</td><td>Đặt sân, thanh toán mẫu, hủy, đánh giá, tham gia hoạt động/cộng đồng và quản lý tài khoản của mình</td></tr>
+<tr><td>A2</td><td>Chủ sân</td><td>Quản lý hồ sơ cơ sở, lịch, giá, thanh toán, hủy/hoàn tiền, nhân viên, hoạt động và doanh thu</td></tr>
+<tr><td>A3</td><td>Nhân viên quản lý sân</td><td>Xem lịch, điểm danh, thu tại sân trong quyền và cơ sở được giao</td></tr>
+<tr><td>A4</td><td>Admin</td><td>Kiểm duyệt bảy nhóm quản lý, xem báo cáo và thiết lập nghiệp vụ hiện có</td></tr>
+</tbody></table>
+<h3 id="2-2-Danh-m-c-y-u-c-u-ch-c-n-ng">2.2 Danh mục yêu cầu chức năng</h3>
+<table class="requirements"><thead><tr><th>Mã</th><th>Yêu cầu</th><th>Điều kiện nghiệm thu chính</th></tr></thead><tbody>
+<tr><td>FR01</td><td>Đăng ký, đăng nhập, đăng xuất, cập nhật tài khoản</td><td>Dữ liệu hợp lệ; tài khoản khóa bị chặn; không lộ dữ liệu tài khoản khác</td></tr>
+<tr><td>FR02</td><td>Phân biệt không gian khách hàng/chủ sân/admin/nhân viên</td><td>Điều hướng đúng phiên; nghiệp vụ kiểm tra quyền, không chỉ ẩn nút</td></tr>
+<tr><td>FR03</td><td>Tìm và xem sân công khai</td><td>Cơ sở chưa duyệt hoặc bị ngưng không nhận đặt mới</td></tr>
+<tr><td>FR04</td><td>Xem bản đồ và sân yêu thích</td><td>Từ chối GPS không làm ứng dụng sập; yêu thích riêng theo tài khoản</td></tr>
+<tr><td>FR05</td><td>Chọn sân con, ngày, giờ và thời lượng</td><td>Chặn trùng lịch, ngoài giờ hoặc sân bị khóa</td></tr>
+<tr><td>FR06</td><td>Xác nhận thông tin đặt sân và giá</td><td>Hiển thị liên hệ, tổng tiền, điều khoản; lưu giá/chính sách tại thời điểm đặt</td></tr>
+<tr><td>FR07</td><td>Gửi chứng từ thanh toán</td><td>Checkout có hạn tối đa 15 phút; ảnh chứng từ/thẻ sinh viên theo luồng hiện tại</td></tr>
+<tr><td>FR08</td><td>Chủ sân xử lý chứng từ</td><td>Chỉ xử lý hồ sơ đang chờ; từ chối phải có lý do</td></tr>
+<tr><td>FR09</td><td>Xem lịch và chi tiết lịch đặt</td><td>Chỉ khách sở hữu hoặc người quản lý hợp lệ được xem</td></tr>
+<tr><td>FR10</td><td>Gửi yêu cầu hủy lịch</td><td>Kiểm tra hạn yêu cầu, trạng thái và thông tin nhận hoàn</td></tr>
+<tr><td>FR11</td><td>Duyệt hủy và ghi nhận hoàn tiền</td><td>Yêu cầu hủy chưa làm lịch bị hủy; ghi nhận hoàn là thao tác thủ công</td></tr>
+<tr><td>FR12</td><td>Đánh giá và báo cáo đánh giá</td><td>Chỉ lịch đủ điều kiện mới được đánh giá; admin ẩn/giữ có lý do</td></tr>
+<tr><td>FR13</td><td>Tạo và gửi hồ sơ cơ sở</td><td>Lưu nháp, đính kèm hồ sơ mẫu, gửi duyệt; không tự công khai</td></tr>
+<tr><td>FR14</td><td>Sửa hồ sơ đang chờ</td><td>Chủ sở hữu sửa đúng phiên bản; hồ sơ vẫn chờ admin xem lại</td></tr>
+<tr><td>FR15</td><td>Duyệt, yêu cầu bổ sung hoặc từ chối hồ sơ</td><td>Admin kiểm tra phiên bản; bản công khai lấy từ nội dung đã duyệt</td></tr>
+<tr><td>FR16</td><td>Quản lý lịch sân và khóa giờ</td><td>Xung đột với đặt sân hoặc phân bổ hoạt động bị chặn</td></tr>
+<tr><td>FR17</td><td>Đề xuất và duyệt bảng giá</td><td>Giá mới không sửa lại hợp đồng đặt sân cũ</td></tr>
+<tr><td>FR18</td><td>Tạo nhân viên và phân quyền theo cơ sở</td><td>Quyền điểm danh/thu cần kèm xem lịch; yêu cầu mật khẩu quản lý</td></tr>
+<tr><td>FR19</td><td>Đăng nhập nhân viên và xem ca</td><td>Nhân viên ngừng hoạt động hoặc bị thu hồi quyền không tiếp tục thao tác</td></tr>
+<tr><td>FR20</td><td>Điểm danh và thu tại sân</td><td>Đúng quyền, đúng cơ sở, đúng khung giờ và trạng thái</td></tr>
+<tr><td>FR21</td><td>Tạo và duyệt hoạt động</td><td>Có social/tournament, sức chứa, phí, lịch và trạng thái duyệt</td></tr>
+<tr><td>FR22</td><td>Đăng ký hoạt động/giải đấu</td><td>Kiểm tra sức chứa và điều kiện; lưu vé cùng snapshot sự kiện</td></tr>
+<tr><td>FR23</td><td>Thanh toán lệ phí mô phỏng</td><td>Hiển thị phương thức, tổng tiền và xác nhận đăng ký; không chuyển tiền thật</td></tr>
+<tr><td>FR24</td><td>Lịch đấu, điểm danh và kết quả</td><td>Hai vé hợp lệ, không trùng đội/sân/giờ; chưa có tự động chia bảng/nhánh</td></tr>
+<tr><td>FR25</td><td>Hội nhóm và yêu cầu vào nhóm</td><td>Nhóm cần duyệt thành viên thì chưa được đăng bài khi đang chờ</td></tr>
+<tr><td>FR26</td><td>Diễn đàn và chia chi phí</td><td>Nội dung gắn đúng người dùng; mô hình chia chi phí chỉ là ghi nhận cục bộ</td></tr>
+<tr><td>FR27</td><td>Tin nhắn và hỗ trợ</td><td>Tin/ảnh/âm thanh là dữ liệu demo, không phải chat thời gian thực giữa hai máy</td></tr>
+<tr><td>FR28</td><td>Báo cáo thu chi và doanh thu</td><td>Dựa ngày nhận/hoàn tiền được ghi nhận; không dùng giờ chơi làm ngày nhận tiền</td></tr>
+<tr><td>FR29</td><td>Quản lý bảy nhóm của admin</td><td>Sân, chủ sân, người dùng, đánh giá, loại sân, hoạt động, hội nhóm</td></tr>
+<tr><td>FR30</td><td>Lưu và khôi phục dữ liệu</td><td>Đóng/mở lại giữ thao tác; lỗi lưu cho phép thử lại, không báo thành công sai</td></tr>
+</tbody></table>
+<h3 id="2-3-Ma-tr-n-quy-n-nghi-p-v">2.3 Ma trận quyền nghiệp vụ</h3>
+<table class=""><thead><tr><th>Nghiệp vụ</th><th>Khách hàng</th><th>Chủ sân</th><th>Nhân viên</th><th>Admin</th></tr></thead><tbody>
+<tr><td>Đặt sân và gửi chứng từ</td><td>Lịch của mình</td><td>Không dùng vai trò quản trị để đặt thay</td><td>Không</td><td>Không dùng vai trò quản trị để đặt thay</td></tr>
+<tr><td>Duyệt thanh toán/hủy, hoàn tiền</td><td>Không</td><td>Có trong nguyên mẫu</td><td>Không</td><td>Có theo nghiệp vụ hiện có</td></tr>
+<tr><td>Xem lịch vận hành</td><td>Lịch của mình</td><td>Có</td><td>Quyền schedule và cơ sở được giao</td><td>Có</td></tr>
+<tr><td>Điểm danh</td><td>Xem trạng thái</td><td>Có</td><td>Quyền attendance</td><td>Có</td></tr>
+<tr><td>Thu tại sân</td><td>Không</td><td>Có</td><td>Quyền onsite, chỉ lịch đặt sân</td><td>Có</td></tr>
+<tr><td>Cấp quyền nhân viên</td><td>Không</td><td>Có</td><td>Không</td><td>Có trong nguyên mẫu</td></tr>
+<tr><td>Duyệt hồ sơ/danh mục</td><td>Không</td><td>Gửi hồ sơ</td><td>Không</td><td>Có</td></tr>
+<tr><td>Quản trị tài khoản người dùng</td><td>Tài khoản mình</td><td>Không phải quyền admin</td><td>Không</td><td>Có</td></tr>
+<tr><td>Xem doanh thu quản trị</td><td>Không</td><td>Có</td><td>Không</td><td>Có</td></tr>
+</tbody></table>
+<p>Phạm vi nhiều chủ sân phải được kiểm tra lại khi chuyển sang backend. Bảng quyền không thay thế rà soát từng API; ứng dụng hiện tại là mô hình một chủ sân demo.</p>
+<h3 id="2-4-Y-u-c-u-phi-ch-c-n-ng">2.4 Yêu cầu phi chức năng</h3>
+<table class="requirements"><thead><tr><th>Mã</th><th>Yêu cầu</th><th>Tiêu chí lần 1 và kế hoạch</th></tr></thead><tbody>
+<tr><td>NFR01</td><td>Dễ sử dụng</td><td>Điều hướng nhất quán; phân biệt chờ/xác nhận/từ chối; nút gửi có phản hồi</td></tr>
+<tr><td>NFR02</td><td>Khả năng đọc</td><td>Kiểm tra màn hình hẹp và tăng cỡ chữ; chưa chứng nhận toàn bộ WCAG</td></tr>
+<tr><td>NFR03</td><td>Toàn vẹn</td><td>Chặn trùng lịch, sai quyền, sai phiên bản; restore toàn bộ snapshot hợp lệ</td></tr>
+<tr><td>NFR04</td><td>Bền vững dữ liệu</td><td>Khôi phục sau khởi động; có trạng thái lỗi lưu và thử lại</td></tr>
+<tr><td>NFR05</td><td>Bảo mật</td><td>Chỉ dùng thông tin thử; secure storage không thay thế hash mật khẩu và phân quyền server</td></tr>
+<tr><td>NFR06</td><td>Hiệu năng</td><td>Mục tiêu thử nghiệm thao tác thường phản hồi trong 2 giây, không tính chọn file/mạng; chưa đo chuẩn</td></tr>
+<tr><td>NFR07</td><td>Khả năng bảo trì</td><td>Chia màn hình, mô hình, nghiệp vụ; bổ sung service/repository khi có backend</td></tr>
+<tr><td>NFR08</td><td>Khả năng triển khai</td><td>APK Android cài được; điện thoại thật, release và iOS/web là phần cần nghiệm thu thêm</td></tr>
+<tr><td>NFR09</td><td>Riêng tư</td><td>Giấy tờ pháp lý không công khai; không dùng CCCD, chứng từ hay tài khoản ngân hàng thật</td></tr>
+<tr><td>NFR10</td><td>Đồng thời</td><td>Bản cục bộ kiểm tra revision; backend dự kiến cần giao dịch DB và chống gửi lặp</td></tr>
+</tbody></table>
+<h3 id="2-5-Quy-t-c-nghi-p-v">2.5 Quy tắc nghiệp vụ</h3>
+<p>BR01. Một sân con không nhận hai lịch đang chiếm chỗ giao nhau. Khóa sân và phân bổ sự kiện cũng chiếm chỗ. Khoảng thời gian dùng dạng nửa mở [bắt đầu, kết thúc), nên hai lịch sát nhau được phép.</p>
+<p>BR02. Giá từng giờ và chính sách hủy được chụp tại thời điểm đặt. Thay đổi giá hoặc chính sách sau đó không tự sửa hợp đồng cũ. Tiền VND dùng số nguyên, không dùng số thực để tính phí.</p>
+<p>BR03. Checkout khách hàng dùng hạn tối đa 15 phút, không vượt giờ bắt đầu; một số luồng chuyển khoản khác dùng 30 phút. <code>DemoPayment.expired</code> chỉ áp dụng khi còn chờ chứng từ/bị từ chối. Hết hạn không tương đương ngân hàng hoàn tiền.</p>
+<p>BR04. Gửi ảnh làm thanh toán chuyển sang pending, chưa phải approved. Chủ sân/admin duyệt thủ công. Luồng giải đấu có <code>simulatedGateway</code>, phải được ghi rõ là mô phỏng.</p>
+<p>BR05. Checkout đặt sân yêu cầu ảnh thanh toán và thẻ học sinh/sinh viên như UI hiện có. Đây là điều kiện của nguyên mẫu hiện tại, không nên khẳng định mọi khách thực tế đều bắt buộc có thẻ; cần xác nhận lại yêu cầu ở lần sau.</p>
+<p>BR06. Với checkout, hạn yêu cầu hủy ít nhất 2 giờ hoặc lớn hơn nếu chính sách lưu trong lịch yêu cầu. Tại đúng hạn còn được gửi (<code>now</code> không lớn hơn hạn). Chính sách chuẩn hoàn 95% sớm, 50% muộn; checkout có thể không cho gửi ở nhánh muộn. Không áp dụng một mức 95% cho mọi loại lịch.</p>
+<p>BR07. Gửi yêu cầu hủy chỉ tạo requested. Chỉ sau chấp thuận mới hủy lịch; hoàn tiền pending khác recorded. Chưa duyệt thanh toán thì ước tính hoàn bằng 0. Vé hoạt động có quy tắc hủy/hoàn riêng, không dùng chính sách sân.</p>
+<p>BR08. Nhân viên phải đang hoạt động, có quyền và đúng cơ sở. Quyền attendance/onsite cần schedule. Luồng thu tại sân chỉ hỗ trợ lịch đặt sân, không thu vé giải đấu bằng quyền này.</p>
+<p>BR09. Duyệt và sửa hồ sơ kiểm tra phiên bản hiện tại. Cơ sở có bản draft và published; chỉ bản đã duyệt mới công khai. Yêu cầu bổ sung được biểu diễn bằng state rejected kết hợp reviewDecision supplement.</p>
+<p>BR10. Điểm danh kiểm tra mốc thời gian của code, gồm mốc 30 phút trước giờ chơi. Không tự cho phép điểm danh mọi lịch tương lai để tiện demo.</p>
+<p>BR11. Đăng ký hoạt động kiểm tra ngày, sức chứa, số vé và liên kết hội nhóm nếu có. Đăng ký lưu snapshot của sự kiện để phí/lịch đã nhận không đổi theo danh mục mới.</p>
+<p>BR12. Nhật ký hiện tại lưu cục bộ và có giới hạn; không coi là audit ledger bất biến. Báo cáo doanh thu dựa ngày ghi nhận thu/hoàn, không suy diễn từ ngày đặt sân.</p>
+<h2 id="3-Use-case-v-c-t">3 Use case và đặc tả</h2>
+<h3 id="3-1-Danh-m-c-use-case">3.1 Danh mục use case</h3>
+<table class="usecases"><thead><tr><th>Mã</th><th>Use case</th><th>Tác nhân chính</th><th>Yêu cầu</th></tr></thead><tbody>
+<tr><td>UC01</td><td>Đăng nhập và chọn không gian</td><td>A1 A2 A3 A4</td><td>FR01 FR02</td></tr>
+<tr><td>UC02</td><td>Tìm sân và đặt lịch</td><td>A1</td><td>FR03 FR04 FR05 FR06</td></tr>
+<tr><td>UC03</td><td>Gửi chứng từ và xác nhận thanh toán</td><td>A1 A2 A4</td><td>FR07 FR08</td></tr>
+<tr><td>UC04</td><td>Xem lịch và yêu cầu hủy</td><td>A1</td><td>FR09 FR10</td></tr>
+<tr><td>UC05</td><td>Duyệt hủy và ghi nhận hoàn</td><td>A2 A4</td><td>FR11</td></tr>
+<tr><td>UC06</td><td>Thêm sửa và gửi hồ sơ sân</td><td>A2</td><td>FR13 FR14</td></tr>
+<tr><td>UC07</td><td>Kiểm duyệt cơ sở</td><td>A4</td><td>FR15</td></tr>
+<tr><td>UC08</td><td>Quản lý lịch khóa giờ và bảng giá</td><td>A2 A4</td><td>FR16 FR17</td></tr>
+<tr><td>UC09</td><td>Phân quyền nhân viên</td><td>A2 A4</td><td>FR18</td></tr>
+<tr><td>UC10</td><td>Nhân viên vận hành lịch sân</td><td>A3</td><td>FR19 FR20</td></tr>
+<tr><td>UC11</td><td>Tạo và duyệt hoạt động</td><td>A2 A4</td><td>FR21</td></tr>
+<tr><td>UC12</td><td>Đăng ký và thanh toán giải đấu</td><td>A1</td><td>FR22 FR23</td></tr>
+<tr><td>UC13</td><td>Lịch đấu điểm danh kết quả</td><td>A2 A4 A1</td><td>FR24</td></tr>
+<tr><td>UC14</td><td>Hội nhóm diễn đàn và chia chi phí</td><td>A1 A4</td><td>FR25 FR26</td></tr>
+<tr><td>UC15</td><td>Đánh giá và kiểm duyệt</td><td>A1 A4</td><td>FR12 FR29</td></tr>
+<tr><td>UC16</td><td>Báo cáo, hỗ trợ và tài khoản</td><td>A1 A2 A4</td><td>FR27 FR28 FR29 FR30</td></tr>
+</tbody></table>
+<p>Sơ đồ draw.io gồm tổng quan và bốn trang chi tiết. Đường nối tác nhân là association, không phải thứ tự thực hiện. Quan hệ include/extend chỉ dùng khi thật sự bắt buộc/tùy điều kiện; không ghép toàn bộ quy trình thanh toán thành một use case đăng nhập.</p>
+<h3 id="3-2-UC01-ng-nh-p-v-ch-n-kh-ng-gian">3.2 UC01 Đăng nhập và chọn không gian</h3>
+<p><strong>Tiền điều kiện:</strong> ứng dụng nạp dữ liệu xong. <strong>Kích hoạt:</strong> người dùng mở đăng nhập thông thường hoặc không gian nhân viên.</p>
+<ol>
+<li>Nhập định danh và mật khẩu, chọn đúng loại đăng nhập.</li>
+<li>Session chuẩn hóa định danh, kiểm tra tài khoản/khóa hoặc nhân viên/quyền.</li>
+<li>Khi hợp lệ, mở không gian tương ứng và lọc dữ liệu theo phiên.</li>
+<li>Khi đăng xuất, bỏ phiên đang hoạt động, không xóa lịch sử nghiệp vụ.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> sai mật khẩu, bị khóa, nhân viên ngừng hoặc không có quyền; thông báo thất bại và không cấp phiên. Nhân viên sai liên tiếp có cơ chế chờ theo code. <strong>Hậu điều kiện:</strong> chỉ một loại phiên thao tác hiện hành; chưa có token xác thực server.</p>
+<h3 id="3-3-UC02-T-m-s-n-v-t-l-ch">3.3 UC02 Tìm sân và đặt lịch</h3>
+<p><strong>Tiền điều kiện:</strong> khách đăng nhập; cơ sở công khai và nhận đặt; khung giờ hợp lệ. <strong>Kích hoạt:</strong> bấm Đặt sân.</p>
+<ol>
+<li>Chọn cơ sở, sân con, ngày, giờ và thời lượng.</li>
+<li>Session kiểm tra phạm vi mở cửa, các lịch và khóa sân giao nhau.</li>
+<li>Hiển thị thông tin lịch, liên hệ, giá từng giờ, giảm giá và điều khoản.</li>
+<li>Khách xác nhận thông tin và điều khoản.</li>
+<li>Tạo DemoBooking với mã riêng, giá và chính sách snapshot; mở checkout.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> giờ vừa bị chiếm, ngoài giờ, cơ sở ngưng, thông tin thiếu; không tạo lịch trùng. Lỗi lưu giữ trạng thái lỗi để thử lại. <strong>Hậu điều kiện:</strong> có lịch liên kết đúng người và cơ sở; chưa mặc nhiên đã thanh toán. <strong>Mã nguồn:</strong> <code>DemoSession.reserve</code>, <code>demo_<wbr>booking.dart</code>, <code>customer_<wbr>checkout_<wbr>screen.dart</code>.</p>
+<h3 id="3-4-UC03-G-i-ch-ng-t-v-x-c-nh-n-thanh-to-n">3.4 UC03 Gửi chứng từ và xác nhận thanh toán</h3>
+<p><strong>Tiền điều kiện:</strong> lịch chưa hủy, còn hợp lệ; người gửi sở hữu lịch. <strong>Kích hoạt:</strong> tiếp tục thanh toán.</p>
+<ol>
+<li>Tạo/lấy hồ sơ thanh toán và deadline từ startTransfer.</li>
+<li>Hiển thị số tiền, nội dung chuyển khoản và bộ đếm; khách thực hiện chuyển tiền ngoài ứng dụng nếu thử quy trình, nhưng không dùng tiền thật trong demo.</li>
+<li>Chọn ảnh chứng từ và thẻ sinh viên theo checkout; submitProof kiểm tra dữ liệu và thời hạn.</li>
+<li>Chuyển thanh toán sang pending; lịch hiển thị chờ xác nhận.</li>
+<li>Chủ sân/admin mở yêu cầu, duyệt hoặc từ chối kèm lý do.</li>
+<li>Nếu duyệt, lưu approved và receivedAt; nếu từ chối, cho khách sửa/gửi lại khi còn hạn.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> thiếu ảnh, ảnh không hợp lệ, hết hạn, gửi lặp hoặc trạng thái đã xử lý. Popup hết hạn không đồng nghĩa tự hoàn tiền. <strong>Hậu điều kiện:</strong> trạng thái rõ ràng, không biến gửi ảnh thành xác nhận ngân hàng. <strong>Mã nguồn:</strong> <code>DemoManagement.startTransfer</code>, <code>saveProofDraft</code>, <code>saveStudentDraft</code>, <code>submitProof</code>, <code>reviewPayment</code>.</p>
+<h3 id="3-5-UC04-Xem-l-ch-v-y-u-c-u-h-y">3.5 UC04 Xem lịch và yêu cầu hủy</h3>
+<p><strong>Tiền điều kiện:</strong> khách sở hữu lịch có hồ sơ thanh toán. <strong>Kích hoạt:</strong> bấm Yêu cầu hủy lịch trong chi tiết.</p>
+<ol>
+<li>Tính hạn từ giờ bắt đầu và chính sách snapshot, có ngưỡng checkout tối thiểu 2 giờ.</li>
+<li>Nếu còn hạn, hiển thị lý do, phí và tiền dự kiến hoàn.</li>
+<li>Khách nhập lý do, chọn QR hoặc thông tin ngân hàng nhận hoàn và xác nhận.</li>
+<li>Session kiểm tra lại điều kiện tại thời điểm gửi, tạo requested.</li>
+<li>Mở trang theo dõi chờ chủ sân phản hồi; lịch chưa bị hủy.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> quá hạn, lịch đã bắt đầu, đã điểm danh, đã hủy hoặc có yêu cầu đang chờ. Nhánh quá hạn hiển thị lý do và hỗ trợ, không phát sinh phí/hoàn mới. <strong>Hậu điều kiện:</strong> yêu cầu liên kết đúng lịch; thông tin hoàn chỉ phục vụ demo. <strong>Mã nguồn:</strong> <code>canRequestBookingCancellation</code>, <code>requestCancellation</code>, <code>customer_<wbr>cancellation_<wbr>screen.dart</code>.</p>
+<h3 id="3-6-UC05-Duy-t-h-y-v-ghi-nh-n-ho-n">3.6 UC05 Duyệt hủy và ghi nhận hoàn</h3>
+<p><strong>Tiền điều kiện:</strong> quản lý hợp lệ; yêu cầu requested. <strong>Kích hoạt:</strong> mở xử lý yêu cầu hủy.</p>
+<ol>
+<li>Xem lịch, lý do, chứng từ và chính sách đã chốt.</li>
+<li>Chấp thuận hoặc từ chối; từ chối có lý do.</li>
+<li>Nếu chấp thuận, cập nhật cancellation accepted, hủy lịch và xác định tiền hoàn theo thời điểm yêu cầu.</li>
+<li>Nếu có tiền phải hoàn, đặt refund pending; người quản lý thực hiện hoàn ngoài hệ thống.</li>
+<li>Nhập mã tham chiếu và minh chứng hoàn mẫu để recordWorkflowRefund ghi recorded; code cũng có recordDemoRefund là nhánh ghi nhận hoàn demo giản lược.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> hồ sơ đã xử lý, trạng thái không hợp lệ, thiếu minh chứng. <strong>Hậu điều kiện:</strong> tiền hoàn chỉ ghi nhận khi có thao tác xác nhận, không gọi cổng ngân hàng. <strong>Mã nguồn:</strong> <code>demo_<wbr>management.dart</code>, <code>demo_<wbr>workflow_<wbr>session.dart</code>.</p>
+<h3 id="3-7-UC06-Th-m-s-a-v-g-i-h-s-s-n">3.7 UC06 Thêm sửa và gửi hồ sơ sân</h3>
+<p><strong>Tiền điều kiện:</strong> chủ sân đăng nhập, có quyền sở hữu hồ sơ. <strong>Kích hoạt:</strong> thêm sân hoặc chỉnh sửa trong danh sách.</p>
+<ol>
+<li>Điền thông tin cơ sở, số sân, giờ mở/đóng, giá, ảnh, tiện ích, người đại diện, chính sách và giấy tờ mẫu.</li>
+<li>Có thể lưu thông tin nhập dở riêng với hồ sơ đầy đủ.</li>
+<li>Lưu hồ sơ hợp lệ bằng saveFacility; gửi duyệt bằng submitFacility.</li>
+<li>Khi đang pending, sửa qua updatePendingFacility với expectedRevision; không tự chuyển sang approved.</li>
+<li>Theo dõi tiến trình và phản hồi của admin.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> thiếu ảnh/giấy tờ, loại sân chưa được duyệt, sai phiên bản, vượt giới hạn demo hoặc sửa hồ sơ không sở hữu. <strong>Hậu điều kiện:</strong> có draft/pending; bản published không bị thay bằng nội dung chưa duyệt.</p>
+<h3 id="3-8-UC07-Ki-m-duy-t-c-s">3.8 UC07 Kiểm duyệt cơ sở</h3>
+<p><strong>Tiền điều kiện:</strong> admin, hồ sơ pending và đúng revision. <strong>Kích hoạt:</strong> chọn hồ sơ trong quản lý sân.</p>
+<ol>
+<li>Xem hồ sơ, giấy tờ mẫu, người gửi và lịch sử.</li>
+<li>Chọn duyệt, yêu cầu bổ sung hoặc từ chối.</li>
+<li>Với nhánh không duyệt, nhập lý do 5–300 ký tự.</li>
+<li>reviewFacility kiểm tra lại quyền/trạng thái/phiên bản.</li>
+<li>Duyệt sao chép draft sang published; bổ sung/từ chối lưu quyết định và lý do.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> chủ sân vừa sửa, hồ sơ đã được xử lý; tải lại trước khi quyết định. <strong>Hậu điều kiện:</strong> dữ liệu công khai chỉ lấy phiên bản được duyệt. Không tự sửa nội dung của người gửi.</p>
+<h3 id="3-9-UC08-Qu-n-l-l-ch-kh-a-gi-v-b-ng-gi">3.9 UC08 Quản lý lịch khóa giờ và bảng giá</h3>
+<p><strong>Tiền điều kiện:</strong> quản lý cơ sở hợp lệ. <strong>Kích hoạt:</strong> mở lịch sân/bảng giá.</p>
+<ol>
+<li>Chọn cơ sở và ngày, xem đặt sân/khóa/hoạt động.</li>
+<li>Tạo giữ sân hoặc đổi lịch theo điều kiện, kiểm tra giao nhau.</li>
+<li>Đề xuất khung giá ngày thường/cuối tuần, phụ thu, hạn áp dụng.</li>
+<li>Admin xem và duyệt đề xuất.</li>
+<li>Lịch đặt mới dùng bảng giá được duyệt; lịch cũ giữ giá hợp đồng.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> giờ trùng, đề xuất hết hạn, sai revision, sự kiện đã chiếm sân. <strong>Hậu điều kiện:</strong> trạng thái và nhật ký lưu cục bộ; chưa có tối ưu phân sân tự động.</p>
+<h3 id="3-10-UC09-Ph-n-quy-n-nh-n-vi-n">3.10 UC09 Phân quyền nhân viên</h3>
+<p><strong>Tiền điều kiện:</strong> chủ sân/admin, nhân viên đang hoạt động. <strong>Kích hoạt:</strong> mở quyền trong hồ sơ nhân viên.</p>
+<ol>
+<li>Chọn schedule, attendance, onsite và toàn bộ/các cơ sở đã duyệt.</li>
+<li>Nhập mật khẩu nhân viên nếu tạo/đổi và mật khẩu quản lý xác nhận.</li>
+<li>configureEmployeeAccess kiểm tra quyền phụ thuộc, phạm vi, revision và mật khẩu quản lý.</li>
+<li>Lưu phiên bản quyền mới, ghi nhật ký.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> quyền thao tác không có schedule, cơ sở chưa duyệt, mật khẩu ngắn, quyền vừa thay đổi. <strong>Hậu điều kiện:</strong> nhân viên đăng nhập trực tiếp; không được tự cấp quyền, duyệt hoàn hoặc quản trị người dùng.</p>
+<h3 id="3-11-UC10-Nh-n-vi-n-v-n-h-nh-l-ch-s-n">3.11 UC10 Nhân viên vận hành lịch sân</h3>
+<p><strong>Tiền điều kiện:</strong> phiên nhân viên hoạt động và có schedule. <strong>Kích hoạt:</strong> mở lịch/ca.</p>
+<ol>
+<li>employeeSchedule chỉ trả hồ sơ trong cơ sở được phân và khoảng lịch hiện có.</li>
+<li>Nhân viên xem lịch và ca của mình.</li>
+<li>Nếu có attendance, chọn hồ sơ và cập nhật điểm danh sau kiểm tra thời gian/trạng thái.</li>
+<li>Nếu có onsite, xác nhận thu lịch đặt sân đủ điều kiện.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> bị thu hồi quyền, ngoài cơ sở, trạng thái đã thay đổi, thu vé giải đấu bằng onsite. <strong>Hậu điều kiện:</strong> thay đổi đúng bản ghi và nhật ký; nhân viên chỉ xem không thao tác được.</p>
+<h3 id="3-12-UC11-T-o-v-duy-t-ho-t-ng">3.12 UC11 Tạo và duyệt hoạt động</h3>
+<p><strong>Tiền điều kiện:</strong> người tổ chức hợp lệ. <strong>Kích hoạt:</strong> tạo giao lưu/giải đấu.</p>
+<ol>
+<li>Nhập lịch, số chỗ, lệ phí, mô tả/quy tắc, hội nhóm nếu có.</li>
+<li>Lưu nháp, gửi duyệt; admin duyệt hoặc trả hồ sơ có lý do.</li>
+<li>Hoạt động approved đủ điều kiện xuất hiện cho khách đăng ký.</li>
+<li>Có thể phân bổ sân cho khoảng hoạt động; chặn đặt sân giao nhau.</li>
+<li>Hủy hoạt động khác tạm ngưng: hủy có xử lý vé liên quan, ngưng chỉ ngăn đăng ký mới.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> sai sức chứa/lịch, nhóm không hợp lệ, xung đột sân, hồ sơ đã thay đổi. <strong>Hậu điều kiện:</strong> vé đã tạo giữ snapshot; chưa có công cụ chia bảng tự động.</p>
+<h3 id="3-13-UC12-ng-k-v-thanh-to-n-gi-i-u">3.13 UC12 Đăng ký và thanh toán giải đấu</h3>
+<p><strong>Tiền điều kiện:</strong> khách đăng nhập; giải đang nhận đăng ký, còn chỗ. <strong>Kích hoạt:</strong> bấm Đăng ký tham gia.</p>
+<ol>
+<li>Xem điều lệ, lịch, địa điểm và lệ phí.</li>
+<li>Nhập thông tin người đăng ký, đồng đội/trình độ và đồng ý điều khoản.</li>
+<li>joinEvent kiểm tra sức chứa/điều kiện, tạo vé theo snapshot sự kiện.</li>
+<li>Chọn phương thức mô phỏng và bấm thanh toán.</li>
+<li>payTournamentDemo ghi approved cùng cờ simulatedGateway; hiển thị mã đăng ký và xác nhận.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> hết chỗ, giải ngưng/hết hạn, thiếu thông tin hoặc vé bị thay đổi. <strong>Hậu điều kiện:</strong> có vé để xem lịch đấu; không có tiền được chuyển thật. Luồng chuyển khoản chứng từ cho vé là nhánh khác trong workflow.</p>
+<h3 id="3-14-UC13-L-ch-u-i-m-danh-k-t-qu">3.14 UC13 Lịch đấu điểm danh kết quả</h3>
+<p><strong>Tiền điều kiện:</strong> giải có vé/đội hợp lệ. <strong>Kích hoạt:</strong> người tổ chức mở Lịch đấu và kết quả.</p>
+<ol>
+<li>Chọn hai vé đội khác nhau, khung 30 phút, sân và thời gian trong giải.</li>
+<li>Kiểm tra trùng đội/trùng sân và ràng buộc phân bổ sân nếu đã có.</li>
+<li>Khi hai đội đã điểm danh và trận kết thúc, nhập điểm tổng hợp không hòa.</li>
+<li>Admin có thể sửa kết quả theo điều kiện, lý do và revision; chủ sân không ghi đè kết quả.</li>
+<li>Khách có vé xem lịch/kết quả theo đội của mình.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> vé đã hủy, đội chưa điểm danh, trùng lịch, trận chưa hết giờ. <strong>Hậu điều kiện:</strong> lưu kết quả/nhật ký; chưa hỗ trợ tính thắng set, tie-break, tự lên nhánh hoặc vô địch tự động.</p>
+<h3 id="3-15-UC14-H-i-nh-m-di-n-n-v-chia-chi-ph">3.15 UC14 Hội nhóm diễn đàn và chia chi phí</h3>
+<p><strong>Tiền điều kiện:</strong> khách đăng nhập; nhóm phù hợp trạng thái. <strong>Kích hoạt:</strong> vào mục Khám phá.</p>
+<ol>
+<li>Xem nhóm/bài viết công khai, chọn tham gia.</li>
+<li>Nhóm yêu cầu duyệt tạo yêu cầu chờ; chỉ thành viên hợp lệ được đăng bài.</li>
+<li>Tạo bài hoặc mở hoạt động gắn nhóm; điều kiện nhóm tiếp tục được kiểm tra khi đăng ký.</li>
+<li>Xem chi phí và phần chia cho người tham gia theo mô hình hiện có.</li>
+<li>Admin xử lý nhóm/nội dung theo quyền; giữ nguyên lịch sử liên quan.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> nhóm ngưng, yêu cầu trùng, chưa được duyệt, bài bị ẩn. <strong>Hậu điều kiện:</strong> nội dung đúng chủ thể; chưa có chuyển tiền chia phí thực tế hoặc mạng xã hội đồng bộ.</p>
+<h3 id="3-16-UC15-nh-gi-v-ki-m-duy-t">3.16 UC15 Đánh giá và kiểm duyệt</h3>
+<p><strong>Tiền điều kiện:</strong> khách có lịch hoàn thành đủ điều kiện, chưa đánh giá lịch đó. <strong>Kích hoạt:</strong> gửi đánh giá.</p>
+<ol>
+<li>Chọn số sao và nội dung; submitVenueReview kiểm tra liên kết lịch/người dùng.</li>
+<li>Hiển thị đánh giá công khai theo cơ sở nếu chưa bị ẩn.</li>
+<li>Admin xem nội dung/báo cáo, chọn giữ hoặc ẩn kèm lý do theo luồng xác nhận.</li>
+<li>Nội dung gốc được giữ; tổng hợp công khai không tính đánh giá đã ẩn.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> lịch người khác, chưa hoàn thành, trùng đánh giá, quyết định cũ. <strong>Hậu điều kiện:</strong> trạng thái kiểm duyệt và nhật ký được lưu, không viết lại lời khách.</p>
+<h3 id="3-17-UC16-B-o-c-o-h-tr-v-t-i-kho-n">3.17 UC16 Báo cáo, hỗ trợ và tài khoản</h3>
+<p><strong>Tiền điều kiện:</strong> đúng vai trò. <strong>Kích hoạt:</strong> mở tài khoản/hỗ trợ hoặc báo cáo quản trị.</p>
+<ol>
+<li>Khách quản lý liên hệ, yêu thích, phương thức thanh toán mẫu, gửi hỗ trợ và xem tin nhắn.</li>
+<li>Chủ sân/admin chọn khoảng ngày/cơ sở/kênh thu để xem thu chi.</li>
+<li>Tổng hợp theo ngày ghi nhận thu/hoàn; bản ghi thiếu ngày cũ được đánh dấu.</li>
+<li>Xuất báo cáo theo chức năng hiện có; đóng/mở lại kiểm tra lưu trữ.</li>
+<li>Admin quản lý tài khoản người dùng theo chức năng khóa/mở hiện có; khách chỉ chỉnh thông tin của mình. Đây không phải chức năng phân quyền cho admin khác.</li>
+</ol>
+<p><strong>Ngoại lệ:</strong> không có dữ liệu, thiếu quyền, lỗi mạng bản đồ, lỗi lưu hoặc tài liệu hỏng. <strong>Hậu điều kiện:</strong> không suy diễn doanh thu tương lai thành tiền đã thu.</p>
+<h2 id="4-Thi-t-k-ki-n-tr-c-v-ch-ng-tr-nh">4 Thiết kế kiến trúc và chương trình</h2>
+<h3 id="4-1-C-u-tr-c-source">4.1 Cấu trúc source</h3>
+<table class=""><thead><tr><th>Đường dẫn</th><th>Trách nhiệm</th></tr></thead><tbody>
+<tr><td>lib/main.dart</td><td>Khởi tạo theme, session, bộ nạp fixture và HomeScreen</td></tr>
+<tr><td>lib/screens</td><td>Giao diện, điều hướng, biểu mẫu, dialog và xác nhận</td></tr>
+<tr><td>lib/widgets</td><td>Design tokens và widget tái sử dụng</td></tr>
+<tr><td>lib/auth</td><td>DemoSession, xác thực cục bộ, quyền, nghiệp vụ theo extension và lưu/khôi phục</td></tr>
+<tr><td>lib/demo</td><td>Mô hình nghiệp vụ, enum, chính sách, danh mục và dữ liệu seed</td></tr>
+<tr><td>lib/booking</td><td>DemoBooking và dữ liệu hợp đồng lịch đặt</td></tr>
+<tr><td>lib/venues</td><td>Danh mục sân và dịch vụ tra địa chỉ/bản đồ</td></tr>
+<tr><td>lib/chat</td><td>Mô hình hội thoại, ảnh và âm thanh</td></tr>
+<tr><td>lib/reports</td><td>Xuất báo cáo admin</td></tr>
+<tr><td>assets</td><td>Hình, icon, font đã khai báo trong pubspec</td></tr>
+<tr><td>test</td><td>Unit/model test và widget test</td></tr>
+<tr><td>integration_<wbr>test và test_<wbr>driver</td><td>Kịch bản chạy trên thiết bị và driver hỗ trợ</td></tr>
+<tr><td>android và ios</td><td>Cấu hình nền tảng; không đồng nghĩa đã thử cả hai</td></tr>
+<tr><td>build</td><td>Kết quả sinh ra: APK, log, ảnh; không phải source cần chỉnh tay</td></tr>
+</tbody></table>
+<h3 id="4-2-Ki-n-tr-c-hi-n-t-i">4.2 Kiến trúc hiện tại</h3>
+<p>Flutter screen gọi DemoSession hoặc các extension nghiệp vụ. Session kiểm tra trạng thái/quyền, cập nhật mô hình và gọi notifyListeners. Snapshot JSON được xếp hàng ghi vào SessionStore; lỗi lưu hiển thị và cho phép thử lại. SecureSessionStore là triển khai lưu cục bộ; test có thể cấp store giả và đồng hồ giả.</p>
+<p>Các file <code>part of</code> không phải các microservice độc lập. Mô hình hiện tại là prototype có state trung tâm; không gọi tên Clean Architecture, MVC hay MVVM hoàn chỉnh. Giao diện còn gọi nghiệp vụ trực tiếp, và DemoSession chứa nhiều trách nhiệm. Đây là nợ kỹ thuật cần tách khi phát triển backend.</p>
+<h3 id="4-3-Ki-n-tr-c-xu-t">4.3 Kiến trúc đề xuất</h3>
+<p>Giữ Flutter client; bổ sung lớp repository/service kết nối HTTPS API. Backend chịu trách nhiệm xác thực, phân quyền theo chủ sở hữu/cơ sở, giao dịch đặt sân, kiểm tra thời hạn, lưu DB quan hệ, quản lý tệp riêng tư và nhật ký. Client không có quyền tự quyết định đã thanh toán/đã hoàn tiền trên server.</p>
+<p>SQL SQLite trong bộ này là thiết kế quan hệ tham khảo có thể chạy kiểm tra độc lập. Nó chưa được nối vào Flutter, chưa phải migration của snapshot hiện tại, cũng chưa phải backend production. Nếu chọn PostgreSQL/MySQL cho máy chủ, phải chuyển kiểu dữ liệu, khóa thời gian, quy tắc đồng thời và chạy lại kiểm thử trên engine đó.</p>
+<h3 id="4-4-Sequence-diagram">4.4 Sequence diagram</h3>
+<p>Bộ draw.io có sáu sequence: đặt sân và xác nhận thanh toán; hết hạn checkout; yêu cầu hủy và hoàn; gửi/sửa/duyệt hồ sơ; phân quyền và thao tác nhân viên; đăng ký/thanh toán giải đấu. Lifeline UI, Session và Store là thành phần đang có, không vẽ API/DB giả như thành phần đã chạy.</p>
+<p>Mỗi sequence dùng nhánh alt cho thành công/thất bại. Chuyển vai trò trong demo là đăng xuất/đăng nhập trên cùng thiết bị; Store không gửi thông báo đến thiết bị khác. Lưu cục bộ có thể thất bại sau thay đổi trong bộ nhớ, vì vậy sơ đồ có nhánh lỗi lưu và retry, không tuyên bố commit nguyên tử ở mức ổ đĩa cho mọi thao tác.</p>
+<h3 id="4-5-Class-diagram">4.5 Class diagram</h3>
+<p>Hai trang mô tả lớp hiện có: lõi state/lưu trữ; miền lịch đặt/thanh toán/cơ sở/nhân viên. Các association biểu diễn khóa ID hoặc sở hữu logic; không khẳng định mọi quan hệ là con trỏ đối tượng. Extension nghiệp vụ được ghi rõ là extension trên DemoSession, không phải service được tiêm độc lập.</p>
+<h2 id="5-Thi-t-k-d-li-u-v-ERD">5 Thiết kế dữ liệu và ERD</h2>
+<h3 id="5-1-Nguy-n-t-c">5.1 Nguyên tắc</h3>
+<p>Phân biệt facility là cơ sở với court là sân con. Tách phiên bản hồ sơ nháp/công khai; tách đơn hàng chung, lịch đặt sân và đăng ký hoạt động; thanh toán/hủy/hoàn tham chiếu đơn hàng chung để tránh khóa ngoại đa hình không kiểm soát. Không xóa cứng lịch sử tài chính khi tài khoản hoặc cơ sở ngưng.</p>
+<p>Ảnh/giấy tờ dự kiến lưu qua bảng documents với URI tệp riêng tư và metadata, không đưa ảnh base64 vào mọi dòng DB. Mật khẩu ở schema là password_<wbr>hash, không seed mật khẩu thật. Đây là thiết kế tương lai; code demo hiện tại còn quản lý secret cục bộ dạng chuỗi trong snapshot được mã hóa bởi storage.</p>
+<h3 id="5-2-Nh-m-th-c-th">5.2 Nhóm thực thể</h3>
+<table class=""><thead><tr><th>Nhóm</th><th>Thực thể chính</th><th>Quan hệ cốt lõi</th></tr></thead><tbody>
+<tr><td>Danh tính</td><td>users, roles, user_<wbr>roles, employee_<wbr>profiles</td><td>User nhiều vai trò trong thiết kế; nhân viên thuộc một chủ sân</td></tr>
+<tr><td>Phạm vi nhân viên</td><td>employee_<wbr>permissions, employee_<wbr>facilities, employee_<wbr>shifts</td><td>Nhân viên nhiều quyền/cơ sở/ca</td></tr>
+<tr><td>Cơ sở</td><td>sports, court_<wbr>types, facilities, facility_<wbr>versions, courts</td><td>Một cơ sở nhiều phiên bản và sân con</td></tr>
+<tr><td>Giá và xác minh</td><td>tariff_<wbr>proposals, tariff_<wbr>bands, owner_<wbr>verifications</td><td>Đề xuất giá có nhiều khung; xác minh gắn chủ sân</td></tr>
+<tr><td>Đặt sân và tài chính</td><td>orders, bookings, payments, cancellation_<wbr>requests, refunds</td><td>Một đơn có một loại chi tiết; một hồ sơ thanh toán trong mô hình giản lược</td></tr>
+<tr><td>Chiếm chỗ</td><td>court_<wbr>reservations</td><td>Khoảng đặt/khóa/phân bổ sự kiện cùng bảng để chặn trùng</td></tr>
+<tr><td>Hoạt động</td><td>events, event_<wbr>occurrences, registrations, tournament_<wbr>matches</td><td>Sự kiện có các lần tổ chức; vé/đội thuộc lần tổ chức</td></tr>
+<tr><td>Cộng đồng</td><td>play_<wbr>groups, group_<wbr>memberships, group_<wbr>join_<wbr>requests, posts</td><td>Thành viên và yêu cầu vào nhóm tách biệt</td></tr>
+<tr><td>Phản hồi</td><td>reviews, disputes, support_<wbr>tickets, audit_<wbr>entries</td><td>Đánh giá gắn lịch; khiếu nại gắn đơn; nhật ký gắn tác nhân</td></tr>
+<tr><td>Bổ trợ</td><td>documents, favorites, payment_<wbr>methods, courses, enrollments, expenses, expense_<wbr>shares, chat_<wbr>conversations, chat_<wbr>participants, chat_<wbr>messages, payouts, payout_<wbr>items</td><td>Danh mục và quan hệ phụ trợ</td></tr>
+</tbody></table>
+<h3 id="5-3-R-ng-bu-c-v-tr-ch-nhi-m-giao-d-ch">5.3 Ràng buộc và trách nhiệm giao dịch</h3>
+<p>SQL có PK, FK, CHECK, UNIQUE, index và trigger kiểm tra giao nhau khi INSERT/UPDATE court_<wbr>reservations, chống trùng trận theo sân/đội, hạn chế vé vượt sức chứa và review không khớp chủ lịch. Bảng reservation dùng cùng không gian giờ cho đặt sân/khóa/phân bổ sự kiện.</p>
+<p>Ứng dụng/backend tương lai vẫn phải đặt các thao tác vào giao dịch: tạo order + booking + reservation; hủy + giải phóng reservation; thu + timestamp + audit; đổi quyền + revision. DDL không tự triển khai toàn bộ máy trạng thái, thời hạn, hash mật khẩu, upload an toàn hoặc kiểm tra người gọi. File kiểm thử SQL xác nhận phạm vi ràng buộc đã viết, không thay thế test tích hợp API.</p>
+<p>Tất cả thời gian SQL dùng Unix timestamp UTC tính bằng giây. UI chuyển sang Asia/Ho_Chi_Minh. Code hiện tại chủ yếu dùng DateTime local; cần migration rõ ràng để tránh lệch ngày. Tiền là INTEGER VND. Từ điển dữ liệu HTML được sinh trực tiếp từ SQL, gồm cột, kiểu, null/default, PK và FK.</p>
+<h3 id="5-4-Nh-ng-quy-t-nh-c-n-m">5.4 Những quyết định còn mở</h3>
+<p>Chưa chốt DB máy chủ, nhà cung cấp thanh toán, quy định bắt buộc thẻ sinh viên, phạm vi dữ liệu giữa nhiều chủ sân, chính sách lưu giấy tờ, SLA, thông báo thật và chuẩn thể thức giải đấu. Schema mở rộng phạm vi nhưng các mục chưa có trong app không được đánh dấu đã hoàn thành.</p>
+<h2 id="6-Deployment-diagram-v-tri-n-khai">6 Deployment diagram và triển khai</h2>
+<h3 id="6-1-Tri-n-khai-c">6.1 Triển khai đã có</h3>
+<p>Android emulator hoặc điện thoại cài APK Flutter. Trong tiến trình ứng dụng có UI, Session và mô hình; dữ liệu cục bộ lưu qua FlutterSecureStorage. Asset đóng gói trong APK. Bản đồ/tra địa chỉ gọi dịch vụ ngoài qua Internet; chọn ảnh/PDF/microphone/GPS dùng quyền và plugin thiết bị.</p>
+<p>Hiện chưa có API server, DB server hay object storage của đồ án. File SQL tạo ra trong báo cáo là tài liệu thiết kế và công cụ kiểm thử độc lập, không thay đổi vị trí lưu dữ liệu của app.</p>
+<h3 id="6-2-Tri-n-khai-d-ki-n">6.2 Triển khai dự kiến</h3>
+<p>Flutter Android kết nối HTTPS API; API dùng DB quan hệ và kho tệp riêng tư. Dịch vụ email/push và ngân hàng/PSP là tích hợp tương lai có hợp đồng và môi trường sandbox. Khóa DB/storage nằm ở server, không trong APK. Web admin, CI/CD, load balancer và nhiều bản sao server chỉ bổ sung khi thật sự triển khai; không vẽ như hiện trạng.</p>
+<h3 id="6-3-H-ng-d-n-ch-y">6.3 Hướng dẫn chạy</h3>
+<p>Tại thư mục source, dùng Flutter SDK phù hợp với pubspec và cấu hình Android SDK:</p>
+<pre>flutter pub get
+flutter analyze
+flutter test test/demo_seed_test.dart test/demo_seed_widget_test.dart
+flutter run -d emulator-5554
+flutter build apk --debug</pre>
+<p>APK nằm tại <code>build/app/outputs/flutter-apk/app-debug.apk</code>. Bản hiện có đã cài và mở trên emulator; không khẳng định đã thử mọi điện thoại. Trên Windows, nếu Gradle báo đường dẫn socket dài, cấu hình thư mục tạm ngắn được phép ghi trước khi build.</p>
+<p>Release hiện dùng debug signing; package/label còn mang tên test_<wbr>do_<wbr>an. Trước phát hành phải đổi định danh, cấu hình release keystore riêng, quản lý version, kiểm tra backup/quyền, bật luồng backend và nghiệm thu bảo mật. Debug APK phù hợp demo lớp nhưng kích thước lớn và không phản ánh hiệu năng release.</p>
+<h2 id="7-URD-giao-di-n-v-lu-ng-UI-UX">7 URD giao diện và luồng UI UX</h2>
+<h3 id="7-1-i-u-h-ng-theo-vai-tr">7.1 Điều hướng theo vai trò</h3>
+<p>Khách hàng dùng Trang chủ, Bản đồ, Khám phá, Nổi bật, Tài khoản. Các trang tài khoản gồm lịch đặt, yêu thích, phương thức thanh toán và hồ sơ. Khám phá có diễn đàn/hội nhóm/hoạt động và đăng ký giải đấu. Sơ đồ sitemap trong draw.io thể hiện các nhánh chính, không thay thế danh mục toàn bộ widget.</p>
+<p>Chủ sân có dashboard và các mục quản lý sân: lịch sân, sân của tôi, thêm sân, chỉnh sửa sân, chờ duyệt, bảng giá, doanh thu, khách hàng, nhân viên, quản lý trận đấu, chi tiết đặt sân, hồ sơ. Admin có bảy nhóm quản lý đã nêu và các màn duyệt/báo cáo. Nhân viên vào không gian riêng từ đăng nhập/tài khoản, không cần mượn phiên chủ sân.</p>
+<h3 id="7-2-C-c-lu-ng-UI-ch-nh">7.2 Các luồng UI chính</h3>
+<table class=""><thead><tr><th>Luồng</th><th>Chuỗi màn hình</th><th>Trạng thái cần thể hiện</th></tr></thead><tbody>
+<tr><td>Đặt sân</td><td>Chi tiết sân → chọn giờ → thông tin đặt → thanh toán → lịch đặt → chi tiết</td><td>Thiếu thông tin, trùng giờ, chờ chứng từ, pending, hết hạn, approved</td></tr>
+<tr><td>Hủy</td><td>Chi tiết → điều kiện hủy → lý do/thông tin nhận hoàn → gửi → theo dõi</td><td>Đủ điều kiện, quá hạn, chờ phản hồi, từ chối, hoàn chờ/đã ghi nhận</td></tr>
+<tr><td>Hồ sơ sân</td><td>Danh sách → chỉnh sửa → lưu/gửi → chờ duyệt → admin xử lý</td><td>Nháp, pending, supplement, rejected, approved, suspended</td></tr>
+<tr><td>Nhân viên</td><td>Đăng nhập riêng → lịch/ca → chi tiết → điểm danh/thu</td><td>Chỉ xem, đủ quyền, ngoài phạm vi, bị thu hồi quyền</td></tr>
+<tr><td>Giải đấu</td><td>Khám phá → chi tiết → đăng ký → thanh toán lệ phí → hoàn tất → vé/lịch đấu</td><td>Hết chỗ, thiếu đồng đội, thanh toán mô phỏng, vé hủy</td></tr>
+<tr><td>Kiểm duyệt</td><td>Danh sách → hồ sơ/nội dung → quyết định → xác nhận → lịch sử</td><td>Giữ/ẩn hoặc duyệt/bổ sung/từ chối; xử lý sai phiên bản</td></tr>
+</tbody></table>
+<h3 id="7-3-Quy-c-UI-v-nghi-m-thu">7.3 Quy ước UI và nghiệm thu</h3>
+<p>Giữ xanh lá làm màu thương hiệu, chữ có dấu và số tiền nhất quán. Trạng thái không chỉ dựa màu mà có nhãn; nút phá hủy có xác nhận phù hợp. Lỗi biểu mẫu gắn trường, giữ dữ liệu người dùng nhập; loading/empty/error tách biệt. Màn hình hẹp cho phép nội dung xuống dòng thay vì che nút.</p>
+<p>Ảnh minh chứng trong báo cáo lấy từ kết quả test/emulator sẵn có; widget test có thể dùng ảnh giả nên vùng ảnh trống không phải chứng nhận asset thực tế. Không coi screenshot test là nghiệm thu camera, file picker, microphone hoặc GPS trên điện thoại thật. Phụ lục sơ đồ PDF dùng khổ A3 để giữ chữ và quan hệ đọc được; phần báo cáo chữ dùng khổ Letter. Có thể xuất riêng từng trang từ draw.io theo khổ trường yêu cầu.</p>
+<h2 id="8-Truy-v-t-v-k-ho-ch-ki-m-th">8 Truy vết và kế hoạch kiểm thử</h2>
+<h3 id="8-1-B-ng-truy-v-t">8.1 Bảng truy vết</h3>
+<table class="trace"><thead><tr><th>Yêu cầu</th><th>Use case</th><th>Source đại diện</th><th>Test đại diện</th><th>Sequence</th></tr></thead><tbody>
+<tr><td>FR05–FR09</td><td>UC02 UC03</td><td>demo_<wbr>session, demo_<wbr>management, customer_<wbr>checkout_<wbr>screen</td><td>booking_<wbr>test, customer_<wbr>checkout_<wbr>test</td><td>SQ01 SQ02</td></tr>
+<tr><td>FR10–FR11</td><td>UC04 UC05</td><td>demo_<wbr>management, customer_<wbr>cancellation_<wbr>screen</td><td>cancellation_<wbr>policy_<wbr>test, customer_<wbr>cancellation_<wbr>test</td><td>SQ03</td></tr>
+<tr><td>FR13–FR15</td><td>UC06 UC07</td><td>demo_<wbr>facilities_<wbr>session, facility_<wbr>pending_<wbr>screen</td><td>facilities_<wbr>test, facility_<wbr>pending_<wbr>test</td><td>SQ04</td></tr>
+<tr><td>FR16–FR17</td><td>UC08</td><td>demo_<wbr>calendar_<wbr>session, demo_<wbr>facility_<wbr>tariffs_<wbr>session</td><td>calendar_<wbr>test, tariff_<wbr>test, facility_<wbr>tariffs_<wbr>test</td><td>SQ01 phụ thuộc</td></tr>
+<tr><td>FR18–FR20</td><td>UC09 UC10</td><td>demo_<wbr>employee_<wbr>access_<wbr>session, demo_<wbr>shifts_<wbr>session</td><td>employee_<wbr>access_<wbr>test, employee_<wbr>facility_<wbr>scope_<wbr>test</td><td>SQ05</td></tr>
+<tr><td>FR21–FR24</td><td>UC11 UC12 UC13</td><td>demo_<wbr>activities_<wbr>session, demo_<wbr>workflow_<wbr>session, demo_<wbr>matches_<wbr>session</td><td>activities_<wbr>test, customer_<wbr>tournament_<wbr>checkout_<wbr>test, matches_<wbr>test</td><td>SQ06</td></tr>
+<tr><td>FR25–FR26</td><td>UC14</td><td>demo_<wbr>play_<wbr>groups_<wbr>session, demo_<wbr>session, customer_<wbr>forum_<wbr>views</td><td>group_<wbr>membership_<wbr>test, customer_<wbr>forum_<wbr>views_<wbr>test</td><td>Không tách riêng lần 1</td></tr>
+<tr><td>FR12 FR29</td><td>UC15</td><td>demo_<wbr>reviews_<wbr>session, admin_<wbr>management_<wbr>screen</td><td>reviews_<wbr>test, admin_<wbr>management_<wbr>figma_<wbr>test</td><td>Không tách riêng lần 1</td></tr>
+<tr><td>FR27 FR28 FR30</td><td>UC16</td><td>session_<wbr>store, demo_<wbr>cashflow, admin_<wbr>report_<wbr>export</td><td>persistence_<wbr>test, cashflow_<wbr>test, admin_<wbr>system_<wbr>report_<wbr>test</td><td>Store trong SQ01–SQ06</td></tr>
+</tbody></table>
+<p>Tên source/test trong bảng là tên file <code>.dart</code>, nằm trong lib hoặc test tương ứng. Bảng thể hiện liên hệ thiết kế, không khẳng định tất cả file này đã chạy lại trong lượt làm tài liệu.</p>
+<h3 id="8-2-K-ch-b-n-demo-v-nghi-m-thu-th-c-ng">8.2 Kịch bản demo và nghiệm thu thủ công</h3>
+<table class="requirements"><thead><tr><th>Mã</th><th>Kịch bản</th><th>Kết quả mong đợi</th></tr></thead><tbody>
+<tr><td>AT01</td><td>Minh Phát đăng nhập xem lịch; đổi sang Tấn Đạt</td><td>Mỗi người chỉ xem lịch/vé của mình</td></tr>
+<tr><td>AT02</td><td>Đặt một giờ trống, thử đặt lại giờ đó</td><td>Lần thứ hai không tạo lịch trùng</td></tr>
+<tr><td>AT03</td><td>Hoàn thành checkout với ảnh mẫu</td><td>Hiển thị chờ xác nhận, chưa approved</td></tr>
+<tr><td>AT04</td><td>Chủ sân duyệt, khách mở lại lịch</td><td>Trên cùng thiết bị, trạng thái approved được giữ</td></tr>
+<tr><td>AT05</td><td>Dùng đồng hồ giả kiểm tra deadline</td><td>Hết hạn chặn gửi; không báo hoàn tiền tự động</td></tr>
+<tr><td>AT06</td><td>Gửi yêu cầu hủy đúng hạn</td><td>Requested; lịch chưa hủy; tiền dự kiến đúng</td></tr>
+<tr><td>AT07</td><td>Gửi hủy quá hạn</td><td>Chặn gửi, giải thích hạn; lịch vẫn hiệu lực</td></tr>
+<tr><td>AT08</td><td>Chủ sân chấp thuận và ghi nhận hoàn mẫu</td><td>Hủy/hoàn có trạng thái riêng; không ghi nhận hai lần</td></tr>
+<tr><td>AT09</td><td>Sửa hồ sơ pending rồi admin duyệt bản cũ</td><td>Bản cũ bị chặn bởi revision</td></tr>
+<tr><td>AT10</td><td>Admin yêu cầu bổ sung</td><td>Chủ sân thấy lý do và có thể gửi lại</td></tr>
+<tr><td>AT11</td><td>Nhân viên schedule đăng nhập</td><td>Xem lịch/ca, không được điểm danh hoặc thu</td></tr>
+<tr><td>AT12</td><td>Nhân viên đầy đủ quyền vào cơ sở ngoài phạm vi</td><td>Bị chặn dù biết mã lịch</td></tr>
+<tr><td>AT13</td><td>Thu hồi quyền khi nhân viên có phiên cũ</td><td>Thao tác tiếp theo bị chặn</td></tr>
+<tr><td>AT14</td><td>Phân bổ sân cho giải rồi đặt giờ trùng</td><td>Chặn đặt, giải phóng sau hủy đúng luồng</td></tr>
+<tr><td>AT15</td><td>Đăng ký giải và thanh toán mẫu</td><td>Có vé/mã đăng ký, nhãn mô phỏng</td></tr>
+<tr><td>AT16</td><td>Đổi giá sau khi đã đặt</td><td>Giá hợp đồng cũ không thay đổi</td></tr>
+<tr><td>AT17</td><td>Tắt/mở ứng dụng</td><td>Giữ lịch, quyền và quyết định, không seed lại</td></tr>
+<tr><td>AT18</td><td>Giả lập lỗi ghi store</td><td>Hiển thị chưa lưu và nút thử lại</td></tr>
+<tr><td>AT19</td><td>Màn 320px và cỡ chữ lớn</td><td>Không tràn/chồng chữ hoặc mất nút</td></tr>
+<tr><td>AT20</td><td>Từ chối GPS hoặc mất mạng</td><td>Có thông báo/fallback, không làm sập app</td></tr>
+</tbody></table>
+<h3 id="8-3-B-ng-ch-ng-c">8.3 Bằng chứng đã có</h3>
+<p>Đợt sửa dữ liệu gần nhất có log 91 test liên quan thành công; sau thay đổi cuối nhóm 16 test seed/widget thành công. Hai nhóm có chồng lặp, không cộng thành 107 test khác nhau. Phân tích toàn dự án sau đó còn một lint thông tin về dấu ngoặc trong <code>integration_<wbr>test/owner_<wbr>tabs_<wbr>device_<wbr>test.dart:51</code>; không phải lỗi biên dịch. APK debug đã cài và mở thành công trên emulator-5554.</p>
+<p>Chưa chạy lại toàn bộ test suite hoặc toàn bộ integration test trên điện thoại thật trong lượt lập tài liệu. Hình trong phụ lục là bằng chứng tại thời điểm chụp, không chứng minh mọi luồng đều đạt. File <code>validation_<wbr>results.json</code> của bộ tài liệu ghi riêng kết quả kiểm tra SQL/XML/link, không nhập nhằng với kiểm thử ứng dụng.</p>
+<h2 id="9-nh-gi-l-n-1-v-c-ng-vi-c-ti-p-theo">9 Đánh giá lần 1 và công việc tiếp theo</h2>
+<h3 id="9-1-M-c-p-ng">9.1 Mức đáp ứng</h3>
+<p>Source hiện có layout, điều hướng, phân nhóm mã và APK để kiểm thử UI/UX. Tài liệu này bổ sung URD, use case, sequence, ERD/class, deployment, truy vết và kế hoạch nghiệm thu. Mức đáp ứng cuối cùng do giảng viên đánh giá theo rubric; không thể suy ra chắc chắn đạt 40% điểm từ số màn hình hoặc số test.</p>
+<h3 id="9-2-Vi-c-c-n-l-m-tr-c-bu-i-b-o-c-o">9.2 Việc cần làm trước buổi báo cáo</h3>
+<ol>
+<li>Điền thông tin trường/nhóm và thống nhất tên ứng dụng.</li>
+<li>Chốt các quy tắc mở, nhất là thẻ sinh viên và hủy/hoàn.</li>
+<li>Thử APK trên một điện thoại thật, kiểm tra chọn ảnh/PDF, micro và GPS.</li>
+<li>Quay video ngắn các luồng đặt–duyệt–hủy, duyệt hồ sơ và nhân viên bị giới hạn quyền.</li>
+<li>Cập nhật README cũ, sửa lint nhỏ và chuẩn bị APK/video dự phòng.</li>
+<li>Không nhập giấy tờ cá nhân, tài khoản ngân hàng hoặc chứng từ thật vào bản demo.</li>
+</ol>
+<h3 id="9-3-L-tr-nh-sau-l-n-1">9.3 Lộ trình sau lần 1</h3>
+<p>Tách repository/service khỏi Session; chọn DB/API; migration dữ liệu; hash mật khẩu và token; scope nhiều chủ sân; giao dịch và chống gửi lặp; kho tệp riêng tư; tích hợp thanh toán sandbox; thông báo thật; kiểm thử bảo mật/đồng thời và release signing. Những mục này là kế hoạch, không phải tính năng đang có.</p>
+<h2 id="10-Ph-l-c-t-i-kho-n-v-ngu-n-i-chi-u">10 Phụ lục tài khoản và nguồn đối chiếu</h2>
+<h3 id="10-1-T-i-kho-n-m-u">10.1 Tài khoản mẫu</h3>
+<table class=""><thead><tr><th>Vai trò hoặc tên</th><th>Đăng nhập</th><th>Mật khẩu khởi tạo</th></tr></thead><tbody>
+<tr><td>Khách hàng Văn Hùng</td><td>0901234567 hoặc demo@nvh.vn</td><td>Demo1234</td></tr>
+<tr><td>Nguyễn Minh Anh</td><td>0909000011</td><td>Demo1234</td></tr>
+<tr><td>Nguyễn Quốc Bảo</td><td>0909000012</td><td>Demo1234</td></tr>
+<tr><td>Trần Hoàng Nam</td><td>0909000013</td><td>Demo1234, tài khoản khóa mẫu</td></tr>
+<tr><td>Minh Phát</td><td>0909000014</td><td>Demo1234</td></tr>
+<tr><td>Tấn Đạt</td><td>0909000015</td><td>Demo1234</td></tr>
+<tr><td>Chủ sân Nguyễn Văn Hùng</td><td>owner@nvh.demo</td><td>Demo1234</td></tr>
+<tr><td>Admin Trần Thu Hà</td><td>admin@nvh.demo</td><td>Demo1234</td></tr>
+<tr><td>Nhân viên Trần Minh Hoàng</td><td>0909000001</td><td>Demo1234</td></tr>
+<tr><td>Nhân viên chỉ xem Lê Thảo Linh</td><td>0909000002</td><td>Demo1234</td></tr>
+</tbody></table>
+<p>Nếu tài khoản đã đổi mật khẩu thì tiếp tục dùng mật khẩu đã đổi. Nhân viên dùng không gian nhân viên; không đăng nhập như khách. Tài khoản trùng đã tồn tại được bộ seed giữ nguyên, nên môi trường cũ có thể khác bản cài mới.</p>
+<h3 id="10-2-Ngu-n-n-i-b">10.2 Nguồn nội bộ</h3>
+<p>Source <code>lib/main.dart</code>, <code>lib/auth/demo_<wbr>session.dart</code>, <code>lib/auth/session_<wbr>store.dart</code>, các extension nghiệp vụ và model trong <code>lib/demo</code>, <code>lib/booking</code>. Cấu hình <code>pubspec.yaml</code>, <code>android/app/build.gradle.kts</code>, <code>AndroidManifest.xml</code>. Tài liệu <code>DEMO_TEST_DATA.md</code>; log <code>build/natural-seed-regression.log</code>, <code>build/natural-seed-final-tests.log</code>, <code>build/report-readiness-analyze.log</code>; ảnh <code>build/previews/natural-seed-emulator.png</code>, <code>natural-venues-402.png</code>, <code>natural-venues-320.png</code>.</p>
+<h3 id="10-3-Ngu-n-c-ng-c">10.3 Nguồn công cụ</h3>
+<p>Draw.io lưu sơ đồ dạng XML chỉnh sửa được: https://www.drawio.com/docs/manual/editor/save-file-formats/ . Link chia sẻ chứa dữ liệu sơ đồ: https://www.drawio.com/docs/manual/export/publish-link/ . Link trong bộ bàn giao mở một bản sao được mã hóa trong URL, không phải file cộng tác đang đồng bộ hoặc file đã đăng lên Drive.</p>
+<p>SQL sử dụng SQLite với foreign keys được bật cho từng kết nối: https://www.sqlite.org/foreignkeys.html . Tham khảo trigger: https://www.sqlite.org/lang_<wbr>createtrigger.html . Các tài liệu công cụ không thay thế yêu cầu môn học.</p><h2>Phụ lục ảnh minh chứng UI UX</h2><p>Ảnh đã có từ lần kiểm tra ứng dụng gần nhất, không phải ảnh tạo giả cho tài liệu.</p><div class="gallery"><figure><img src="evidence/natural-seed-emulator.png" alt="Dashboard chủ sân trên emulator, sau cập nhật dữ liệu."><figcaption>Dashboard chủ sân trên emulator, sau cập nhật dữ liệu.</figcaption></figure><figure><img src="evidence/natural-venues-402.png" alt="Widget test 402px: danh sách chỉnh sửa sân; ảnh giả trong test."><figcaption>Widget test 402px: danh sách chỉnh sửa sân; ảnh giả trong test.</figcaption></figure><figure><img src="evidence/natural-venues-320.png" alt="Widget test 320px, text scale 2: chữ xuống dòng; ảnh giả trong test."><figcaption>Widget test 320px, text scale 2: chữ xuống dòng; ảnh giả trong test.</figcaption></figure></div><section class="diagram"><h2>UC00 Use case tổng quan</h2><p>Bốn tác nhân nghiệp vụ; khách vãng lai chỉ xem công khai/đăng ký. Chi tiết xem UC01–UC04.</p><img src="diagrams/UC00.svg" alt="Use case tổng quan"></section><section class="diagram"><h2>UC01 Use case khách hàng</h2><p>Nguyên mẫu hiện tại • association không biểu diễn thứ tự thao tác</p><img src="diagrams/UC01.svg" alt="Use case khách hàng"></section><section class="diagram"><h2>UC02 Use case chủ sân</h2><p>Nguyên mẫu hiện tại • association không biểu diễn thứ tự thao tác</p><img src="diagrams/UC02.svg" alt="Use case chủ sân"></section><section class="diagram"><h2>UC03 Use case nhân viên</h2><p>Nguyên mẫu hiện tại • association không biểu diễn thứ tự thao tác</p><img src="diagrams/UC03.svg" alt="Use case nhân viên"></section><section class="diagram"><h2>UC04 Use case admin</h2><p>Nguyên mẫu hiện tại • association không biểu diễn thứ tự thao tác</p><img src="diagrams/UC04.svg" alt="Use case admin"></section><section class="diagram sequence"><h2>SQ01 Đặt sân và xác nhận thanh toán</h2><p>Hiện trạng: gọi nội bộ Flutter, không có API server. Mũi tên đứt: trả kết quả hoặc lỗi.</p><img src="diagrams/SQ01.svg" alt="Đặt sân và xác nhận thanh toán"></section><section class="diagram sequence"><h2>SQ02 Hết hạn checkout</h2><p>Hiện trạng: gọi nội bộ Flutter, không có API server. Mũi tên đứt: trả kết quả hoặc lỗi.</p><img src="diagrams/SQ02.svg" alt="Hết hạn checkout"></section><section class="diagram sequence"><h2>SQ03 Yêu cầu hủy và ghi nhận hoàn</h2><p>Hiện trạng: gọi nội bộ Flutter, không có API server. Mũi tên đứt: trả kết quả hoặc lỗi.</p><img src="diagrams/SQ03.svg" alt="Yêu cầu hủy và ghi nhận hoàn"></section><section class="diagram sequence"><h2>SQ04 Gửi sửa và duyệt hồ sơ cơ sở</h2><p>Hiện trạng: gọi nội bộ Flutter, không có API server. Mũi tên đứt: trả kết quả hoặc lỗi.</p><img src="diagrams/SQ04.svg" alt="Gửi sửa và duyệt hồ sơ cơ sở"></section><section class="diagram sequence"><h2>SQ05 Phân quyền và thao tác nhân viên</h2><p>Hiện trạng: gọi nội bộ Flutter, không có API server. Mũi tên đứt: trả kết quả hoặc lỗi.</p><img src="diagrams/SQ05.svg" alt="Phân quyền và thao tác nhân viên"></section><section class="diagram sequence"><h2>SQ06 Đăng ký và thanh toán giải đấu</h2><p>Hiện trạng: gọi nội bộ Flutter, không có API server. Mũi tên đứt: trả kết quả hoặc lỗi.</p><img src="diagrams/SQ06.svg" alt="Đăng ký và thanh toán giải đấu"></section><section class="diagram sequence"><h2>ER01 ERD danh tính và nhân viên</h2><p>THIẾT KẾ DB ĐỀ XUẤT • Bảng lặp là cùng thực thể. Mã R nối với danh sách quan hệ phía dưới; FK ngoài trang xem từ điển.</p><img src="diagrams/ER01.svg" alt="ERD danh tính và nhân viên"></section><section class="diagram sequence"><h2>ER02 ERD cơ sở và bảng giá</h2><p>THIẾT KẾ DB ĐỀ XUẤT • Bảng lặp là cùng thực thể. Mã R nối với danh sách quan hệ phía dưới; FK ngoài trang xem từ điển.</p><img src="diagrams/ER02.svg" alt="ERD cơ sở và bảng giá"></section><section class="diagram sequence"><h2>ER03 ERD đặt sân và tài chính</h2><p>THIẾT KẾ DB ĐỀ XUẤT • Bảng lặp là cùng thực thể. Mã R nối với danh sách quan hệ phía dưới; FK ngoài trang xem từ điển.</p><img src="diagrams/ER03.svg" alt="ERD đặt sân và tài chính"></section><section class="diagram sequence"><h2>ER04 ERD hoạt động và cộng đồng</h2><p>THIẾT KẾ DB ĐỀ XUẤT • Bảng lặp là cùng thực thể. Mã R nối với danh sách quan hệ phía dưới; FK ngoài trang xem từ điển.</p><img src="diagrams/ER04.svg" alt="ERD hoạt động và cộng đồng"></section><section class="diagram sequence"><h2>ER05 ERD các chức năng bổ trợ</h2><p>THIẾT KẾ DB ĐỀ XUẤT • Bảng lặp là cùng thực thể. Mã R nối với danh sách quan hệ phía dưới; FK ngoài trang xem từ điển.</p><img src="diagrams/ER05.svg" alt="ERD các chức năng bổ trợ"></section><section class="diagram sequence"><h2>ER06 ERD tin nhắn và chi trả</h2><p>THIẾT KẾ DB ĐỀ XUẤT • Bảng lặp là cùng thực thể. Mã R nối với danh sách quan hệ phía dưới; FK ngoài trang xem từ điển.</p><img src="diagrams/ER06.svg" alt="ERD tin nhắn và chi trả"></section><section class="diagram"><h2>CL01 Class diagram lõi state và lưu trữ</h2><p>LỚP HIỆN CÓ • Đường đứt là phụ thuộc hoặc implements, nhãn giải thích extension; thuộc tính/phương thức được rút gọn.</p><img src="diagrams/CL01.svg" alt="Class diagram lõi state và lưu trữ"></section><section class="diagram"><h2>CL02 Class diagram miền nghiệp vụ</h2><p>LỚP HIỆN CÓ • Association theo ID hoặc collection logic, không phải mọi liên kết đều là object reference.</p><img src="diagrams/CL02.svg" alt="Class diagram miền nghiệp vụ"></section><section class="diagram"><h2>DP01 Deployment hiện tại</h2><p>ĐÃ TRIỂN KHAI NGUYÊN MẪU • Không có API/DB server. Các phiên vai trò dùng cùng thiết bị khi demo.</p><img src="diagrams/DP01.svg" alt="Deployment hiện tại"></section><section class="diagram"><h2>DP02 Deployment backend dự kiến</h2><p>THIẾT KẾ TƯƠNG LAI • Chưa nối vào Flutter. SQL bàn giao dùng SQLite để kiểm tra thiết kế quan hệ độc lập.</p><img src="diagrams/DP02.svg" alt="Deployment backend dự kiến"></section><section class="diagram"><h2>UX01 Sitemap và luồng UI UX</h2><p>Các mục cùng vai trò là nhánh độc lập, không phải thứ tự bắt buộc. Đây không phải sơ đồ phân quyền server.</p><img src="diagrams/UX01.svg" alt="Sitemap và luồng UI UX"></section><section class="diagram"><h2>ST01 Trạng thái thanh toán và hủy</h2><p>expired không phải enum lưu; chỉ áp dụng awaitingProof/rejected. Hủy và hoàn là hai trục trạng thái riêng, không phải payment state.</p><img src="diagrams/ST01.svg" alt="Trạng thái thanh toán và hủy"></section><section class="diagram"><h2>ST02 Trạng thái hồ sơ cơ sở</h2><p>Sửa pending tăng revision và giữ pending. Sửa hồ sơ đã duyệt tạo nháp theo luồng hiện có; published không bị thay trước khi duyệt.</p><img src="diagrams/ST02.svg" alt="Trạng thái hồ sơ cơ sở"></section></main></html>

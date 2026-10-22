@@ -1,0 +1,16 @@
+{
+  "oldInputCount": 178,
+  "expandedInputCount": 1550,
+  "sameIdsUpdated": 178,
+  "newIdsAdded": 1372,
+  "oldOnlyRetained": 0,
+  "mergedCount": 1550,
+  "namedSupported": 129,
+  "unnamed": 1305,
+  "namedSportUnclear": 92,
+  "namedOtherSports": 24,
+  "missingAddress": 1507,
+  "coordinateOverlapGroups": [],
+  "originalTagsVerified": true,
+  "output": "D:\\PTUDDD\\test_do_an\\data\\imported_osm\\expanded_2026-10-19"
+}
